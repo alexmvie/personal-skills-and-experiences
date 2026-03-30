@@ -10,6 +10,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### Programmiersprachen
 
+- **C#** (7.x / 8.x) – Desktop-Anwendungen, Windows Forms, Business-Applikationen
 - **TypeScript** (5.x) – Statische Typisierung über alle Projekte
 - **JavaScript** (ES6+) – Moderne JavaScript-Features
 - **Kotlin** – Nur Video-Playback-Feature, keine umfassende Android-Erfahrung
@@ -63,6 +64,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Webpack** – Module Bundler
 - **Make** – Build Automation
 - **Gradle** – Android Build System
+- **.NET SDK** – C# Build & Publish System
 
 ---
 
@@ -167,6 +169,24 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Static Export** – HTML-Dateien für Hosting
 - **CDN** – Content Delivery Network
 - **SEO** – Sitemap, Robots.txt
+
+### Desktop Development (C# / .NET)
+
+- **C#** (.NET 7.0) – Desktop-Anwendungen mit Windows Forms
+- **Windows Forms (WinForms)** – Desktop UI Framework
+- **System.IO** – Dateisystem-Operationen, FileSystemWatcher
+- **System.Net.Http** – HTTP Client für API-Kommunikation
+- **Newtonsoft.Json** – JSON Serialisierung/Deserialisierung
+- **AES Encryption** – Verschlüsselung mit Aes.Create(), Rfc2898DeriveBytes
+- **Mutex** – Single-Instance Application Enforcement
+- **NotifyIcon** – System Tray Integration
+- **TableLayoutPanel** – Responsive Desktop Layout
+- **Event-driven Programming** – FileSystemWatcher Events, UI Events
+- **IDisposable Pattern** – Ressourcen-Management
+- **Async/Await** – Asynchrone Programmierung
+- **Dictionary-based Localization** – Mehrsprachige Desktop-Anwendungen (de, en)
+- **File-based Logging** – Thread-safe Logging mit Rotation
+- **Encrypted Settings** – Verschlüsselte Konfigurationsdateien
 
 ---
 
@@ -403,6 +423,20 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **SEO-Optimierung** – Meta-Tags, Canonical, Open Graph
 - **PDF-Text-Extraction** – Python-Script für Dokumentenverarbeitung
 
+### C# / .NET
+
+- **Windows Forms (WinForms)** – Desktop UI Framework mit TableLayoutPanel, GroupBox, Controls
+- **Event-driven Programming** – FileSystemWatcher, UI Events, Custom Events
+- **IDisposable Pattern** – Ressourcen-Management mit Dispose() und GC.SuppressFinalize()
+- **Async/Await** – Asynchrone HTTP-Kommunikation mit HttpClient
+- **AES Encryption** – Aes.Create(), Rfc2898DeriveBytes, SHA256, Salt/IV Management
+- **Mutex** – Single-Instance Application Enforcement
+- **System Tray Integration** – NotifyIcon, ContextMenuStrip
+- **JSON Serialization** – Newtonsoft.Json für Settings-Management
+- **Dictionary-based Localization** – Mehrsprachige Desktop-Anwendungen (de, en)
+- **File-based Logging** – Thread-safe Logging mit Rotation und Event-basiertem UI-Update
+- **Custom EventArgs** – FenixFileSystemEventArgs für erweiterte Event-Daten
+
 ### Build Scripts
 
 - **Node.js Scripts** – Video Optimization, Image Upscaling, HTML Prettify
@@ -617,11 +651,31 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **TypeScript Interfaces** – Type-Safe Code
 - **NativeWind** – Tailwind CSS für React Native
 
+### Fenix-Win2Web (Windows Desktop Application)
+
+- **C# / .NET 7.0** – Desktop-Anwendung mit Windows Forms
+- **Windows Forms (WinForms)** – Desktop UI mit TableLayoutPanel, GroupBox, TextBox, Button, ComboBox, CheckBox
+- **FileSystemWatcher** – Echtzeit-Dateiüberwachung mit Event-Handling
+- **HttpClient** – REST API-Kommunikation mit Authentication Header
+- **AES Encryption** – Verschlüsselung mit Aes.Create(), Rfc2898DeriveBytes, SHA256
+- **Newtonsoft.Json** – JSON Serialisierung für verschlüsselte Settings
+- **Mutex** – Single-Instance Application Enforcement
+- **NotifyIcon** – System Tray Integration mit ContextMenuStrip
+- **IDisposable Pattern** – Ressourcen-Management mit Dispose() und GC.SuppressFinalize()
+- **Async/Await** – Asynchrone Datei-Uploads mit Retry-Logik
+- **Dictionary-based Localization** – Mehrsprachige UI (de, en)
+- **File-based Logging** – Thread-safe Logging mit Rotation und Event-basiertem UI-Update
+- **Custom EventArgs** – FenixFileSystemEventArgs für erweiterte Event-Daten
+- **FolderBrowserDialog** – Dateiauswahl-Dialog
+- **Embedded Resources** – Icon-Embedding in Assembly
+- **Application Restart** – Graceful Shutdown und Neustart-Mechanismus
+
 ---
 
 ## Stärken
 
 - **Cross-Platform Development** – Mobile (iOS/Android) & Web aus einer Codebasis
+- **Desktop Development** – C#/.NET Windows Forms Anwendungen
 - **Full-Stack Development** – Frontend + Backend + CMS
 - **Static Site Generation** – Astro für Performance-optimierte Websites
 - **PHP Development** – Portfolio-Websites, Komponenten-Architektur
@@ -646,6 +700,9 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Video Playback** – Auto-Play mit Status-Updates
 - **Screen Navigation** – State-basierte Screen-Wechsel
 - **Device Detection** – Platform-spezifische Anpassungen
+- **Encryption & Security** – AES, Rfc2898DeriveBytes, SHA256
+- **File System Monitoring** – FileSystemWatcher, Echtzeit-Events
+- **System Tray Applications** – NotifyIcon, ContextMenuStrip
 
 ---
 
@@ -719,6 +776,10 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 - VS Code, Git, npm/pnpm, ESLint, Firebase CLI, Expo CLI, Make, Gradle
 
+### Desktop Development (C# / .NET)
+
+- C#, .NET 7.0, Windows Forms, Newtonsoft.Json, HttpClient, AES Encryption, Mutex, NotifyIcon
+
 ### Native Android (Eingeschränkt)
 
 - Kotlin (nur Video-Feature), MediaPlayer, VideoView, Android SDK
@@ -730,6 +791,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 Full-Stack Developer mit umfassender Erfahrung in:
 
 - ✅ **Cross-Platform Mobile Development** (React Native + Expo)
+- ✅ **Desktop Development** (C#/.NET Windows Forms)
 - ✅ **Full-Stack Web Development** (Next.js + Payload CMS)
 - ✅ **Static Site Generation** (Astro für Performance-optimierte Websites)
 - ✅ **PHP Development** (Portfolio-Websites, Komponenten-Architektur)
@@ -753,6 +815,7 @@ Full-Stack Developer mit umfassender Erfahrung in:
 - ✅ **Device Detection** (Platform-spezifische Anpassungen)
 - ✅ **Monorepo Management** (Turborepo)
 - ✅ **TypeScript** über alle Projekte
+- ✅ **C# / .NET** (Windows Forms Desktop-Anwendungen)
 - ✅ **State Management** (Zustand + Immer + AsyncStorage + Context API)
 - ✅ **Animationen & UX** (Motion + Reanimated)
 - ✅ **Clean Architecture** (Atomic Design, Separation of Concerns)
@@ -790,3 +853,6 @@ Full-Stack Developer mit umfassender Erfahrung in:
 - ✅ **Torn Paper SVG** (Custom SVG-Elemente)
 - ✅ **Video Background** (MP4 Video-Integration)
 - ✅ **Sticky Navigation** (JavaScript-basierte Navigation)
+- ✅ **Encryption & Security** (AES, Rfc2898DeriveBytes, SHA256)
+- ✅ **File System Monitoring** (FileSystemWatcher, Echtzeit-Events)
+- ✅ **System Tray Applications** (NotifyIcon, ContextMenuStrip)
