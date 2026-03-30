@@ -1,5 +1,9 @@
 # Software Developer – Skills & Kompetenzen
 
+**Version:** 2.0  
+**Datum:** 30.03.2026  
+**Letzte Aktualisierung:** KI-gestützte Softwareentwicklung, C#/.NET Desktop Development
+
 ## Übersicht
 
 Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, moderne Web-Anwendungen, Enterprise CMS-Lösungen, Health-Tech Anwendungen, Static Site Generation, kreative Web-Projekte, Corporate Mobile Prototypen und Portfolio-Websites. Erfahrung in der Entwicklung von Business-Anwendungen mit State-of-the-Art Technologien.
@@ -13,6 +17,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **C#** (7.x / 8.x) – Desktop-Anwendungen, Windows Forms, Business-Applikationen
 - **TypeScript** (5.x) – Statische Typisierung über alle Projekte
 - **JavaScript** (ES6+) – Moderne JavaScript-Features
+- **ActionScript 3 (AS3)** – Mobile-Apps mit Adobe AIR / AirMobile
 - **Kotlin** – Nur Video-Playback-Feature, keine umfassende Android-Erfahrung
 - **Python** – Skripte, Datenverarbeitung, ML-Tools, Web Scraping, Video Processing
 - **PHP** – Server-side Scripting, Komponenten-Architektur
@@ -24,12 +29,17 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **React Native** (0.76.x / 0.79.x / 0.81.x) – Cross-Platform Mobile Framework
 - **Next.js** (15.x) – React Meta-Framework mit App Router
 - **Astro** (5.x) – Static Site Generator mit Island Architecture
+- **Svelte** – Compiler-basiertes Frontend Framework
+- **Alpine.js** – Lightweight JavaScript Framework für Backend-Interaktivität
+- **jQuery** – DOM-Manipulation, Event-Handling, AJAX
 - **Expo** (SDK 52 / 53 / 54) – React Native Entwicklungsumgebung
 
 ### Styling Frameworks
 
 - **Tailwind CSS** (3.x / 4.x) – Utility-First CSS Framework
 - **NativeWind** (2.x) – Tailwind CSS für React Native
+- **Material-UI** – React UI Framework
+- **Bulma** – CSS Framework basierend auf Flexbox
 - **BEM CSS** – Block Element Modifier Methodology
 - **Linear Gradient** – Gradient-Backgrounds
 - **CSS Custom Properties** – Design Tokens für Framework-Portabilität
@@ -42,6 +52,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### CMS Frameworks
 
+- **WordPress** – CMS mit Bricks, ACSS/Frames, Advanced Themer, Custom Plugins & APIs, Elementor Pro
 - **Payload CMS** (3.20.x) – Headless CMS mit TypeScript
 
 ### State Management Frameworks
@@ -54,6 +65,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Firebase Firestore** – NoSQL Cloud Database
 - **SQLite** – Embedded Relational Database
 - **Supabase** – Open Source Firebase Alternative
+- **MySQL** – Relationale Datenbank
 
 ### Build Tools
 
@@ -283,6 +295,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Class Variance Authority** – Variante-basierte Styling
 - **Font Awesome** – Icon-Bibliothek für Portfolio
 - **CSS Transitions** – Smooth Hover-Effekte
+- **2D/3D Animationen** – Erstellung von Animationen für Industrie und Augmented Reality
 
 ---
 
@@ -366,6 +379,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Responsive Images** – WebP, AVIF, Multiple Sizes
 - **Adaptive Video** – Optimiert für verschiedene Bandbreiten
 - **Platform Detection** – iOS vs Android Anpassungen
+- **WCAG 2.2 AA Accessibility** – Barrierefreie Webentwicklung
 
 ### Code Patterns
 
@@ -466,6 +480,80 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **MediaPlayer/VideoView** – Native Video-Playback
 - **Android SDK** – Grundlegende APIs für Video-Handling
 
+### Augmented Reality
+
+- **AR-Entwicklung** – 2D/3D-Animationen für Industrie und Augmented Reality
+- **Adobe AIR / AirMobile** – Mobile-Apps mit ActionScript 3
+
+### MERN Stack
+
+- **MongoDB** – NoSQL Datenbank
+- **Express.js** – Backend Framework
+- **React** – Frontend Framework
+- **Node.js** – JavaScript Runtime
+- **WIFI Wien MERN Full Stack Developer** – Weiterbildung 2024/2025
+
+### KI-gestützte Entwicklung
+
+- **Augment Code** – KI-gestützte Code-Generierung
+- **Windsurf** – KI-Entwicklungstool
+- **Antigravity** – KI-Entwicklungsumgebung
+- **Context Engineering** – KI-Prompt-Optimierung
+
+---
+
+## KI-gestützte Softwareentwicklung
+
+### Multi-LLM Orchestrierung
+
+- **Model Routing** – Strategische Auswahl des optimalen LLM für jede Aufgabe
+- **Task-Model Matching** – Zuweisung spezifischer Modelle zu Entwicklungsaufgaben
+- **Fallback-Strategie** – Wechsel zwischen Modellen bei Limit-Erreichung
+
+### AI Development Tools
+
+- **Antigravity** – Multi-LLM Plattform (UI/Design, nano banana für Grafiken)
+- **Windsurf** – AI-native IDE (Claude Sonnet 4.6 für komplexen Code, swe-1.5 für einfachen Code)
+- **Cline** – VS Code Extension (mimo-v2-pro als kostenlose Alternative)
+- **Augment Code** – Ehemalige Nutzung (gekündigt wegen Kosten)
+
+### Projekt-Management mit AI
+
+- **claude.md** – Projekt-Kontext-Datei für AI-Agents
+- **windsurfrules** – Konfigurationsdatei für AI-Verhalten
+- **Config Versionierung** – Interne Versionierung innerhalb der Konfigurationsdateien
+- **Feature-basierte Milestones** – Fortschritts-Tracking nach Funktionalität
+
+### Quality Assurance
+
+- **Rails/Guardrails** – Projekt-spezifische Regeln für AI-Output
+- **Playwright E2E Testing** – Automatisierte Tests für AI-generierten Code
+- **Manuelle Verifikation** – Persönliche Prüfung nach automatisierten Tests
+
+### Context Engineering
+
+- **Prompt Engineering** – Entwicklung komplexer Prompts mit AI-Agents
+- **System Prompts** – Vordefinierte Kontexte für konsistente Ergebnisse
+
+### DSGVO & Datenschutz
+
+- **DSGVO-konformes Self-Hosting** – Webfonts und Datenschutz
+- **Barrierefreie Webentwicklung** – WCAG 2.2 AA Compliance
+
+### Custom Plugins & APIs
+
+- **ACPT-Plugin** – Custom PHP Plugin für WordPress
+- **Barcode-Generierung** – eLabels und Barcode-Generierung
+- **Lizenz- und Benutzerverwaltung** – Komplexe WordPress-API
+- **Hausverwaltungsdaten** – Individuelles Backend mit Alpine.js
+- **Merchandise-Shop** – Interaktiver Flow mit Warenkorb-Logik
+- **Mail-Checkout-Erstellung** – Automatisierte Mail-Checkout-Erstellung
+- **Clientseitige Validierung** – Formular-Validierung mit JavaScript
+- **LocalBusiness JSON-LD** – Strukturierte Daten für SEO
+- **Canonical, Open Graph, Twitter Cards** – SEO-Meta-Tags
+- **Responsive Bildpipeline** – Sharp/Manifest für optimierte Bilder
+- **Warenkorb-Logik** – Clientseitige Warenkorb-Implementierung
+
 ### CMS & Content Management
 
 - **Payload CMS** – Headless CMS Setup & Configuration
@@ -483,7 +571,11 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 ### Tools & Workflow
 
 - **Git** – Version Control
+- **GitHub** – Git Repository Hosting
+- **GitLab** – Git Repository Hosting & CI/CD
 - **VS Code** – IDE
+- **Jira** – Projektmanagement & Issue Tracking
+- **Confluence** – Dokumentation & Wiki
 - **npm/pnpm** – Paketmanagement
 - **Expo CLI** – Mobile Build & Deployment
 - **EAS Build** – Expo Application Services (APK, IPA)
@@ -496,6 +588,37 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **WinSCP** – Windows SFTP Client
 - **PowerShell** – Windows Scripting
 - **Gradle** – Android Build System
+
+### Berufserfahrung
+
+- **20+ Jahre Erfahrung** – Softwareentwicklung, Full Stack Developer, Webdesigner
+- **14+ Jahre Remote/Homeoffice** – Erfolgreich remote aus Wien
+- **Spryflash** – Wartung und Betrieb von Kundeninstanzen, Koordination betriebsinterner Abläufe
+
+### Community & Weiterbildung
+
+- **Kevin Geary Inner Circle** – Kostenpflichtiges Entwickler-Community
+- **Bricks Facebook Groups** – WordPress-Entwickler-Community
+- **YouTube AI Channels** – KI-Entwicklung und Trends
+- **antigravity-awesome-skills** – Open-Source Beitrag zu KI-Skills-Repository
+
+### Ausbildung & Zertifikate
+
+- **Diplom „Full Stack JavaScript Developer" (MERN-Stack)** – WIFI Wien, 2023–2024
+- **Diplom „Webdesign & Producing (WordPress)"** – WIFI Wien, 2021
+- **Zertifikat „Certified C++ Software Developer"** – WIFI Wien, 2006
+- **Flash MX & Actionscript Programmierung** – WIFI Wien, 2003–2004
+- **Apple Einführungskurs** – BEST, Wien, 2003
+- **Internet-Design und -Administration** – Teamwork, Wien, 2002
+- **Office Administrator** – Teamwork, Wien, 2001
+
+### KI-Tools & Erfahrung
+
+- **Antigravity** – KI-Entwicklungsumgebung
+- **Windsurf** – KI-Entwicklungstool
+- **VS Code mit Gemini** – KI-gestützte Code-Generierung
+- **Cline mit verschiedenen LLMs** – KI-Code-Assistent
+- **Ollama Self-Hosting** – Lokale LLM-Installation und -Nutzung
 
 ---
 
@@ -632,6 +755,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 ### FoodTruck POS System (Web App)
 
 - **Vollständiges Point-of-Sale System** für Food Trucks
+- **Entwickelt für Tablets** – Optimiert für Touch-Interaktion
 - **Product Grid** mit kategorisierten Menüs
 - **Order Management** – Warenkorb mit CRUD-Operationen
 - **Payment Modal** – Mehrere Zahlungsarten (Bargeld, Karte, Rechnung)
@@ -640,6 +764,8 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Dynamic Button Text** – Responsive Textsystem
 - **State Management** mit useState
 - **Animationen** mit Motion
+- **GitHub Repository** – https://github.com/alexmvie/foodtruck-kassasystem-react
+- **Live Demo** – https://alexmvie.github.io/foodtruck-kassasystem-react/
 
 ### Todo-App mit Auth-System (Mobile App)
 
@@ -669,6 +795,46 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **FolderBrowserDialog** – Dateiauswahl-Dialog
 - **Embedded Resources** – Icon-Embedding in Assembly
 - **Application Restart** – Graceful Shutdown und Neustart-Mechanismus
+
+### preisschilder.at (WordPress + C# Desktop App)
+
+- **Komplexe WordPress-API** – PHP-Backend mit Lizenz- und Benutzerverwaltung
+- **C#-Windows-App** – Automatisierter Daten-Upload
+- **Lizenz- und Benutzerverwaltung** – Komplexe WordPress-API
+
+### monreal.at (Alpine.js Backend)
+
+- **Individuelles Backend** – Alpine.js für Hausverwaltungsdaten
+- **Sicherer Upload/Download** – Rechteverwaltung
+- **Hausverwaltungsdaten** – Individuelles Backend mit Alpine.js
+
+### fotomarton.at (WordPress + Elementor Pro)
+
+- **WordPress-Seite** – Umsetzung nach Vorgaben einer Partneragentur
+- **Elementor Pro** – Page Builder für WordPress
+
+### wein-label.at (WordPress + Bricks/ACSS)
+
+- **WordPress mit Bricks/ACSS** – Custom Theme
+- **ACPT-Plugin** – Custom PHP Plugin für eLabels
+- **Barcode-Generierung** – eLabels und Barcode-Generierung
+
+### halloween-twilight.alex-mastny.com (Astro Showcase)
+
+- **Mehrsprachige Storytelling-Site** – Astro-Framework
+- **WCAG 2.2 AA** – Voll barrierefreie Website
+- **KI-generierte Inhalte** – KI-Content-Generierung
+- **Top-Core-Web-Vitals** – Performance-optimierte Website
+
+### braudeinbier.alex-mastny.com (Astro Relaunch)
+
+- **Astro-Static-Architektur** – Performance & Wartbarkeit
+- **DSGVO-konformes Self-Hosting** – Webfonts und Datenschutz
+- **Responsive Bildpipeline** – Sharp/Manifest für optimierte Bilder
+- **SEO-Daten** – Canonical, Open Graph, Twitter Cards, LocalBusiness JSON-LD
+- **Merchandise-Shop** – Interaktiver Flow mit Warenkorb-Logik
+- **Clientseitige Validierung** – Formular-Validierung mit JavaScript
+- **Mail-Checkout-Erstellung** – Automatisierte Mail-Checkout-Erstellung
 
 ---
 
@@ -856,3 +1022,8 @@ Full-Stack Developer mit umfassender Erfahrung in:
 - ✅ **Encryption & Security** (AES, Rfc2898DeriveBytes, SHA256)
 - ✅ **File System Monitoring** (FileSystemWatcher, Echtzeit-Events)
 - ✅ **System Tray Applications** (NotifyIcon, ContextMenuStrip)
+- ✅ **KI-gestützte Softwareentwicklung** (Multi-LLM, Context Engineering, AI-QA)
+- ✅ **Multi-LLM Orchestrierung** (Model Routing, Task-Model Matching, Fallback-Strategie)
+- ✅ **AI Development Tools** (Antigravity, Windsurf, Cline, Augment Code)
+- ✅ **Projekt-Management mit AI** (claude.md, windsurfrules, Config Versionierung)
+- ✅ **Rails/Guardrails** (Projekt-spezifische Regeln für AI-Output)
