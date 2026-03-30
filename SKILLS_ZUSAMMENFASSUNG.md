@@ -249,6 +249,11 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 ## PHP Development
 
 - **PHP** – Server-side Scripting, Komponenten-Architektur
+- **Klassenbasierte Architektur** – Bevorzugter OOP-Entwicklungsansatz
+- **Object-Oriented Programming (OOP)** – Kapselung, Vererbung, Polymorphismus
+- **WordPress Plugin-Entwicklung** – Custom Plugins für Bricks, Members-Bereiche
+- **Custom PHP Framework** – Eigenentwicklung mit Arbeitskollege
+- **Keine Erfahrung mit Standard-Frameworks** – Laravel, Symfony, etc. (da Custom Framework genutzt)
 - **Modulare Struktur** – modules/, components/ Verzeichnisse
 - **CSS Framework** – Custom Framework mit Design Tokens
 - **SEO-Optimierung** – Meta-Tags, Canonical, Open Graph
@@ -485,6 +490,14 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **AR-Entwicklung** – 2D/3D-Animationen für Industrie und Augmented Reality
 - **Adobe AIR / AirMobile** – Mobile-Apps mit ActionScript 3
 
+### 3D Graphics & Game Development (Ehemalige Erfahrung)
+
+- **3ds Max** – 3D-Modellierung und Animation
+- **Blender** – 3D-Modellierung und Rendering
+- **Unity** – Game Engine Entwicklung
+- **Unreal Engine 5** – Blueprints-basierte Entwicklung
+- **Hinweis** – Ehemalige Tätigkeit, Fokus jetzt auf AI & Softwareentwicklung
+
 ### MERN Stack
 
 - **MongoDB** – NoSQL Datenbank
@@ -582,7 +595,6 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Vite** – Web Build & Dev Server
 - **Astro** – Static Site Generator
 - **Turborepo** – Monorepo Management
-- **Docker** – Containerization
 - **Make** – Build Automation
 - **FTP** – File Transfer Protocol
 - **WinSCP** – Windows SFTP Client
@@ -626,6 +638,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### WEB Alex Mastny Homepage (PHP Portfolio)
 
+- **Website** – https://alex-mastny.com
 - **PHP** – Server-side Scripting, Komponenten-Architektur
 - **Modulare Struktur** – modules/, components/ Verzeichnisse
 - **CSS Framework** – Custom Framework mit Design Tokens
@@ -670,6 +683,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### Halloween Webpage (Creative Static Website)
 
+- **Website** – https://halloween-twilight.alex-mastny.com
 - **Astro 5.x** – Static Site Generator mit Island Architecture
 - **Tailwind CSS 4** – Utility-First Styling
 - **Static Output** – Pre-rendered HTML für Performance
@@ -687,6 +701,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### BrauDeinBier Relaunch (Static Website)
 
+- **Website** – https://braudeinbier.alex-mastny.com
 - **Astro 5.x** – Static Site Generator mit Island Architecture
 - **Static Output** – Pre-rendered HTML für Performance
 - **Sharp** – Bildverarbeitung (Crop, Resize, Optimize)
@@ -752,9 +767,11 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **SQLite** Datenbank
 - **Sharp** für Bildverarbeitung
 
-### FoodTruck POS System (Web App)
+### FoodTruck POS System (Clickable Prototype)
 
-- **Vollständiges Point-of-Sale System** für Food Trucks
+- **Clickable Prototype** – Live-Prototyp-Erstellung in Beratungssession
+- **KI-gestützte Prototyp-Entwicklung** – Google AI Studio für schnelle Prototypen
+- **Usability-Beratung** – Best Practices für Kunden-Usability
 - **Entwickelt für Tablets** – Optimiert für Touch-Interaktion
 - **Product Grid** mit kategorisierten Menüs
 - **Order Management** – Warenkorb mit CRUD-Operationen
@@ -807,6 +824,9 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 - **Individuelles Backend** – Alpine.js für Hausverwaltungsdaten
 - **Sicherer Upload/Download** – Rechteverwaltung
 - **Hausverwaltungsdaten** – Individuelles Backend mit Alpine.js
+- **Geschützter Members-Bereich** – Benutzerverwaltung für Hausverwaltung
+- **Dateizugriff & Rechteverwaltung** – Benutzer-spezifische Dateifreigabe
+- **Backend-Integration** – WordPress Admin für Members-Verwaltung
 
 ### fotomarton.at (WordPress + Elementor Pro)
 
@@ -1027,3 +1047,8 @@ Full-Stack Developer mit umfassender Erfahrung in:
 - ✅ **AI Development Tools** (Antigravity, Windsurf, Cline, Augment Code)
 - ✅ **Projekt-Management mit AI** (claude.md, windsurfrules, Config Versionierung)
 - ✅ **Rails/Guardrails** (Projekt-spezifische Regeln für AI-Output)
+- ✅ **PHP OOP** (Klassenbasierte Architektur, Custom Framework)
+- ✅ **WordPress Plugin-Entwicklung** (Bricks, Members-Bereiche)
+- ✅ **Clickable Prototypen** (Live-Prototyp-Erstellung in Beratungssessions)
+- ✅ **KI-gestützte Prototyp-Entwicklung** (Google AI Studio)
+- ✅ **3D Graphics & Game Development** (3ds Max, Blender, Unity, Unreal Engine 5)
