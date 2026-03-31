@@ -1,0 +1,662 @@
+<!doctype html>
+<html lang="de">
+   <head>
+      <meta charset="UTF-8" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1.0"
+      />
+      <title>Alexander Mastny – Software Developer Portfolio</title>
+      <link
+         rel="preconnect"
+         href="https://fonts.googleapis.com"
+      />
+      <link
+         rel="preconnect"
+         href="https://fonts.gstatic.com"
+         crossorigin
+      />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+         rel="stylesheet"
+      />
+      <style>
+         :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #1f2937;
+            --bg-card-hover: #374151;
+            --text-primary: #f9fafb;
+            --text-secondary: #d1d5db;
+            --text-muted: #9ca3af;
+            --accent-primary: #6366f1;
+            --accent-secondary: #8b5cf6;
+            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+            --border-color: #374151;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+         }
+
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+
+         body {
+            font-family:
+               'Inter',
+               -apple-system,
+               BlinkMacSystemFont,
+               'Segoe UI',
+               Roboto,
+               sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+         }
+
+         .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+         }
+
+         /* Header */
+         .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 3rem 2rem;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-lg);
+         }
+
+         .header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+         }
+
+         .header .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+         }
+
+         .header .location {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+         }
+
+         /* Section */
+         .section {
+            margin-bottom: 2.5rem;
+         }
+
+         .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-primary);
+            display: inline-block;
+         }
+
+         /* Cards */
+         .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+         }
+
+         .card:hover {
+            background: var(--bg-card-hover);
+            box-shadow: var(--shadow);
+            transform: translateY(-2px);
+         }
+
+         .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+         }
+
+         .card-subtitle {
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+         }
+
+         .card-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+         }
+
+         /* Tech Tags */
+         .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.75rem;
+         }
+
+         .tech-tag {
+            background: rgba(99, 102, 241, 0.15);
+            color: var(--accent-primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+         }
+
+         /* Links */
+         a {
+            color: var(--accent-primary);
+            text-decoration: none;
+            transition: color 0.2s ease;
+         }
+
+         a:hover {
+            color: var(--accent-secondary);
+            text-decoration: underline;
+         }
+
+         /* Lists */
+         ul {
+            list-style: none;
+            padding-left: 0;
+         }
+
+         ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+         }
+
+         ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: 600;
+         }
+
+         /* Contact Section */
+         .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+         }
+
+         .contact-item {
+            background: var(--bg-card);
+            padding: 1.25rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+         }
+
+         .contact-item .label {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+         }
+
+         .contact-item .value {
+            font-weight: 500;
+            color: var(--text-primary);
+         }
+
+         /* Footer */
+         .footer {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+         }
+
+         /* Responsive */
+         @media (max-width: 768px) {
+            .container {
+               padding: 1rem;
+            }
+
+            .header {
+               padding: 2rem 1rem;
+            }
+
+            .header h1 {
+               font-size: 2rem;
+            }
+
+            .header .subtitle {
+               font-size: 1.1rem;
+            }
+
+            .section-title {
+               font-size: 1.3rem;
+            }
+
+            .card {
+               padding: 1.25rem;
+            }
+         }
+
+         /* Smooth scrolling */
+         html {
+            scroll-behavior: smooth;
+         }
+
+         /* Selection */
+         ::selection {
+            background: var(--accent-primary);
+            color: white;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <!-- Header -->
+         <header class="header">
+            <h1>Alexander Mastny</h1>
+            <p class="subtitle">Full-Stack Developer</p>
+            <p class="location">Wien, Österreich · 20+ Jahre Erfahrung</p>
+         </header>
+
+         <!-- Über mich -->
+         <section class="section">
+            <h2 class="section-title">Über mich</h2>
+            <div class="card">
+               <p class="card-description">
+                  Erfahrener Full-Stack Software Developer mit über 20 Jahren Berufserfahrung und Spezialisierung auf moderne Web-
+                  und Mobile-Anwendungen. Ich entwickle skalierbare Lösungen von der Konzeption bis zum Deployment – von
+                  Cross-Platform Mobile Apps über Enterprise CMS bis hin zu Desktop-Anwendungen.
+               </p>
+               <p
+                  class="card-description"
+                  style="margin-top: 1rem"
+               >
+                  Seit 14+ Jahren erfolgreich im Remote/Homeoffice tätig, betreue ich Projekte von der ersten Idee bis zum
+                  fertigen Produkt. Meine Stärke liegt in der Verbindung von technischer Exzellenz mit pragmatischer Umsetzung.
+               </p>
+            </div>
+         </section>
+
+         <!-- Kernkompetenzen -->
+         <section class="section">
+            <h2 class="section-title">Kernkompetenzen</h2>
+            <div class="card">
+               <ul>
+                  <li>
+                     <strong>Cross-Platform Mobile Development</strong> – React Native + Expo für iOS, Android und Web aus einer
+                     Codebasis
+                  </li>
+                  <li>
+                     <strong>Full-Stack Web Development</strong> – Next.js, Astro, PHP mit modernen State-Management-Lösungen
+                  </li>
+                  <li>
+                     <strong>Desktop Applications</strong> – C#/.NET Windows Forms mit Verschlüsselung, Dateiüberwachung und
+                     System-Tray-Integration
+                  </li>
+                  <li>
+                     <strong>Enterprise CMS</strong> – Payload CMS und WordPress mit Custom Plugins, API-Integration und
+                     mehrsprachigen Inhalten
+                  </li>
+                  <li>
+                     <strong>KI-gestützte Softwareentwicklung</strong> – Multi-LLM-Orchestrierung, Context Engineering und AI-QA
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- Technologie-Stack -->
+         <section class="section">
+            <h2 class="section-title">Technologie-Stack</h2>
+            <div class="card">
+               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem">
+                  <div>
+                     <strong style="color: var(--accent-primary)">Frontend</strong>
+                     <p
+                        class="card-description"
+                        style="margin-top: 0.5rem"
+                     >
+                        React, React Native, Next.js, Astro, TypeScript, Tailwind CSS
+                     </p>
+                  </div>
+                  <div>
+                     <strong style="color: var(--accent-primary)">Backend</strong>
+                     <p
+                        class="card-description"
+                        style="margin-top: 0.5rem"
+                     >
+                        Node.js, Express.js, PHP, Firebase, Supabase
+                     </p>
+                  </div>
+                  <div>
+                     <strong style="color: var(--accent-primary)">CMS</strong>
+                     <p
+                        class="card-description"
+                        style="margin-top: 0.5rem"
+                     >
+                        Payload CMS, WordPress (Bricks, Elementor Pro)
+                     </p>
+                  </div>
+                  <div>
+                     <strong style="color: var(--accent-primary)">Mobile</strong>
+                     <p
+                        class="card-description"
+                        style="margin-top: 0.5rem"
+                     >
+                        Expo SDK, React Native Reanimated, Expo Router
+                     </p>
+                  </div>
+                  <div>
+                     <strong style="color: var(--accent-primary)">Desktop</strong>
+                     <p
+                        class="card-description"
+                        style="margin-top: 0.5rem"
+                     >
+                        C#/.NET 7.0, Windows Forms, Newtonsoft.Json
+                     </p>
+                  </div>
+                  <div>
+                     <strong style="color: var(--accent-primary)">Build & Deploy</strong>
+                     <p
+                        class="card-description"
+                        style="margin-top: 0.5rem"
+                     >
+                        Vite, Turborepo, EAS Build, Docker, Firebase
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- Projekte -->
+         <section class="section">
+            <h2 class="section-title">Projekte</h2>
+
+            <div class="card">
+               <h3 class="card-title">Fenix-Win2Web – Windows Desktop Application</h3>
+               <p class="card-subtitle">C#/.NET 7.0, Windows Forms, AES Encryption, FileSystemWatcher</p>
+               <p class="card-description">
+                  Desktop-Anwendung für automatisierten Datei-Upload mit Echtzeit-Überwachung. FileSystemWatcher für
+                  Verzeichnis-Monitoring, AES-Verschlüsselung für sensible Konfigurationsdaten, asynchrone HTTP-Kommunikation mit
+                  Retry-Logik. System-Tray-Integration, Single-Instance-Enforcement, mehrsprachige UI (DE/EN).
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">T-Mobile Corporate Mobile Prototypen</h3>
+               <p class="card-subtitle">React Native, Expo SDK 53, Expo AV, Linear Gradient</p>
+               <p class="card-description">
+                  Cross-Platform Mobile Prototypen mit Video-Intro (Auto-Play), Swipe-Navigation über 6 Screens und Corporate
+                  Design System. Mehrere Varianten: Expo (Hauptimplementierung), Kotlin (Video-Feature), AnimStudy.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">GymTracker Antigravity – Fitness App</h3>
+               <p class="card-subtitle">React Native, Expo SDK 54, Firebase Firestore + Auth, Zustand</p>
+               <p class="card-description">
+                  Vollständige Fitness-Tracking-App mit Workout Builder (Drag & Drop), Live-Session-Tracking, Statistiken und
+                  Real-Time-Chat. Offline-First-Architektur mit Firebase-Synchronisation.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">QUILL NextJS PageBuilder – Full-Stack CMS</h3>
+               <p class="card-subtitle">Next.js 15, Payload CMS 3.20, Turborepo, TypeScript</p>
+               <p class="card-description">
+                  Enterprise Page Builder mit Block-Registry, Drag & Drop, Media Management und mehrsprachigen Inhalten.
+                  Monorepo-Architektur mit Docker-Deployment.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Alex Mastny Homepage – Next.js Portfolio</h3>
+               <p class="card-subtitle">Next.js 15, TypeScript, Tailwind CSS, DaisyUI, TipTap</p>
+               <p class="card-description">
+                  <em>Projekt aktuell in Entwicklung.</em> Vollständige Portfolio-Website mit integriertem Admin-Interface. 35+
+                  Portfolio-Projekte mit Filterung, Suche und Kategorisierung. Admin-Bereich mit Dashboard, Projekt-Management,
+                  Image Library mit Screenshot Capture.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Halloween Webpage – Creative Static Site</h3>
+               <p class="card-subtitle">
+                  <a
+                     href="https://halloween-twilight.alex-mastny.com"
+                     target="_blank"
+                     >halloween-twilight.alex-mastny.com</a
+                  >
+               </p>
+               <p class="card-subtitle">Astro 5.x, Tailwind CSS 4, Sharp, FFmpeg</p>
+               <p class="card-description">
+                  Kreative mehrsprachige Storytelling-Website (DE/EN/SK) mit Static Site Generation. AI-basiertes Image Upscaling,
+                  Video Optimization, WCAG 2.2 AA konform.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">BrauDeinBier Relaunch – Static Website</h3>
+               <p class="card-subtitle">
+                  <a
+                     href="https://braudeinbier.alex-mastny.com"
+                     target="_blank"
+                     >braudeinbier.alex-mastny.com</a
+                  >
+               </p>
+               <p class="card-subtitle">Astro 5.x, Sharp, Python Scripts</p>
+               <p class="card-description">
+                  Performance-optimierte Static Website mit responsiver Bildpipeline. DSGVO-konformes Self-Hosting,
+                  Merchandise-Shop mit Warenkorb-Logik.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">FoodTruck POS System – Clickable Prototype</h3>
+               <p class="card-subtitle">React, useState, Motion, Design Tokens</p>
+               <p class="card-description">
+                  <strong>Nur für mobile Geräte</strong> – ausschließlich Smartphone (Hochformat) oder Tablet (Querformat).
+                  Live-Prototyp für Tablet-basierte Kassenlösung mit Product Grid, Order Management und Payment Modal.
+               </p>
+               <div class="tech-tags">
+                  <a
+                     href="https://github.com/alexmvie/foodtruck-kassasystem-react"
+                     target="_blank"
+                     class="tech-tag"
+                     >GitHub</a
+                  >
+                  <a
+                     href="https://alexmvie.github.io/foodtruck-kassasystem-react/"
+                     target="_blank"
+                     class="tech-tag"
+                     >Live Demo</a
+                  >
+               </div>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Antigravity HealthTracker – Mobile Health App</h3>
+               <p class="card-subtitle">React Native, Expo SDK 54, Firebase, Zustand, i18next</p>
+               <p class="card-description">
+                  Modulares Health-Tracking-System mit 6 Gesundheitsmodulen: Blutdruck, SpO2, Gewicht, Körperzusammensetzung,
+                  Metabolisch, Wellness. Multi-User-Support, Progress Photos mit Cloud Storage.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">preisschilder.at – WordPress + C# Integration</h3>
+               <p class="card-subtitle">
+                  <a
+                     href="https://preisschilder.at"
+                     target="_blank"
+                     >preisschilder.at</a
+                  >
+               </p>
+               <p class="card-subtitle">WordPress, PHP, C#/.NET, REST API</p>
+               <p class="card-description">
+                  Komplexe WordPress-API mit Lizenz- und Benutzerverwaltung. C#-Desktop-App für automatisierten Daten-Upload mit
+                  HTTP-Client und Authentication.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">monreal.at – Alpine.js Backend</h3>
+               <p class="card-subtitle">
+                  <a
+                     href="https://www.monreal.at"
+                     target="_blank"
+                     >monreal.at</a
+                  >
+               </p>
+               <p class="card-subtitle">WordPress, Alpine.js, Members-Plugin</p>
+               <p class="card-description">
+                  Individuelles Backend für Hausverwaltungsdaten mit sicherem Upload/Download-System. Benutzerspezifische
+                  Rechteverwaltung.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">wein-label.at – WordPress + Bricks</h3>
+               <p class="card-subtitle">
+                  <a
+                     href="https://wein-label.alex-mastny.com"
+                     target="_blank"
+                     >wein-label.alex-mastny.com</a
+                  >
+               </p>
+               <p class="card-subtitle">WordPress, Bricks Builder, ACSS/Frames</p>
+               <p class="card-description">
+                  Custom Theme mit ACPT-Plugin für eLabels und Barcode-Generierung. Komplexe WordPress-Entwicklung mit Custom Post
+                  Types.
+               </p>
+            </div>
+         </section>
+
+         <!-- Bildung -->
+         <section class="section">
+            <h2 class="section-title">Bildung & Zertifikate</h2>
+
+            <div class="card">
+               <h3 class="card-title">Full Stack JavaScript Developer – WIFI Wien (2024)</h3>
+               <p class="card-subtitle">JavaScript, Node.js, Express.js, React.js, MongoDB, MERN-Stack</p>
+               <p class="card-description">
+                  Erfolgreicher Abschluss der Diplom-Ausbildung. Schwerpunkt auf serverseitige Applikationen mit Node.js/Express,
+                  NoSQL-Datenbanken (MongoDB) und Single Page Applications mit React.js. Software-Engineering mit agilen Methoden,
+                  TDD, Git, Design Patterns und CI/CD-Pipelines.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Web Design und Producing – WIFI Wien (2021)</h3>
+               <p class="card-subtitle">Web Design, Producing, Grafikdesign, Marktkommunikation</p>
+               <p class="card-description">
+                  Erfolgreich abgeschlossener Diplomlehrgang. Fokus auf professionelle Konzeption und ganzheitliche Gestaltung von
+                  Webprojekten.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">WIFI Software Developer – WIFI Wien (2006)</h3>
+               <p class="card-subtitle">C++, OOP, STL, UML, Software-Engineering</p>
+               <p class="card-description">
+                  Umfassende Entwickler-Ausbildung, abgeschlossen mit sehr gutem Erfolg. Fundamentale Programmierkonzepte mit C++,
+                  Software-Engineering mit UML, Prototyping und Qualitätssicherung.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Weitere Zertifikate</h3>
+               <ul>
+                  <li><strong>Flash MX Lehrgang</strong> – WIFI Wien, 2004</li>
+                  <li><strong>Flash ActionScript</strong> – WIFI Wien, 2003</li>
+                  <li><strong>Computergrundkurs Grafik/Multimedia/Apple</strong> – BEST Training, 2003</li>
+                  <li><strong>Internet-Design und -Administration</strong> – TEAM WORK, 2002</li>
+                  <li><strong>Office AdministratorIn</strong> – TEAM WORK, 2001</li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- KI-gestützte Entwicklung -->
+         <section class="section">
+            <h2 class="section-title">KI-gestützte Entwicklung</h2>
+            <div class="card">
+               <ul>
+                  <li><strong>Antigravity</strong> – Multi-LLM Plattform für UI/Design</li>
+                  <li><strong>Windsurf</strong> – AI-native IDE mit Claude Sonnet 4.6</li>
+                  <li><strong>Cline</strong> – VS Code Extension mit verschiedenen LLMs</li>
+                  <li><strong>Context Engineering</strong> – Projekt-spezifische Konfigurationen (claude.md, windsurfrules)</li>
+                  <li><strong>Quality Assurance</strong> – Rails/Guardrails, Playwright E2E Testing</li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- Arbeitsweise -->
+         <section class="section">
+            <h2 class="section-title">Arbeitsweise</h2>
+            <div class="card">
+               <ul>
+                  <li><strong>Remote/Homeoffice</strong> seit 14+ Jahren</li>
+                  <li><strong>TypeScript-First</strong> für type-safety über alle Projekte</li>
+                  <li><strong>Clean Architecture</strong> mit Atomic Design und Separation of Concerns</li>
+                  <li><strong>Agile Methoden</strong> mit Feature-basierten Milestones</li>
+                  <li><strong>Testing</strong> mit Playwright E2E Tests und Visual Regression</li>
+                  <li><strong>Code Quality</strong> – BEM CSS, Custom Hooks, Error Boundaries</li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- Kontakt -->
+         <section class="section">
+            <h2 class="section-title">Kontakt</h2>
+            <div class="contact-grid">
+               <div class="contact-item">
+                  <p class="label">E-Mail</p>
+                  <p class="value"><a href="mailto:alexandermastny@gmail.com">alexandermastny@gmail.com</a></p>
+               </div>
+               <div class="contact-item">
+                  <p class="label">GitHub</p>
+                  <p class="value">
+                     <a
+                        href="https://github.com/alexmvie"
+                        target="_blank"
+                        >github.com/alexmvie</a
+                     >
+                  </p>
+               </div>
+               <div class="contact-item">
+                  <p class="label">Standort</p>
+                  <p class="value">Wien, Österreich</p>
+               </div>
+            </div>
+         </section>
+
+         <!-- Footer -->
+         <footer class="footer">
+            <p>Erstellt: 30.03.2026</p>
+         </footer>
+      </div>
+   </body>
+</html>
