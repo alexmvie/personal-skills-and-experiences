@@ -211,6 +211,31 @@
             }
          }
 
+         /* Link Buttons */
+         .link-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            background: var(--sand-100);
+            color: var(--sand-700);
+            padding: 0.3rem 0.75rem;
+            border-radius: 1px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            border: 1px solid var(--sand-200);
+            text-decoration: none;
+         }
+
+         .link-button:hover {
+            background: var(--sand-200);
+            text-decoration: none;
+         }
+
+         .link-button::before {
+            content: '↗';
+            font-size: 0.75rem;
+         }
+
          /* Tech Tags */
          .tech-tags {
             display: flex;
@@ -271,6 +296,32 @@
             left: 0;
             color: var(--accent);
             font-weight: 700;
+         }
+
+         /* Kernkompetenzen - Desktop: arrow, title, then details in next line */
+         .kernkompetenzen li {
+            display: block;
+         }
+
+         .kernkompetenzen li strong {
+            display: inline;
+         }
+
+         @media (min-width: 768px) {
+            .kernkompetenzen li {
+               display: block;
+               padding-left: 1.5rem;
+            }
+
+            .kernkompetenzen li strong {
+               display: inline;
+            }
+
+            .kernkompetenzen li .details {
+               display: block;
+               padding-left: 0;
+               margin-top: 0.25rem;
+            }
          }
 
          /* Contact Section */
@@ -344,7 +395,7 @@
          <header class="header">
             <h1>Alexander Mastny</h1>
             <p class="subtitle">Full-Stack Developer</p>
-            <p class="location">Wien, Österreich · 20+ Jahre Erfahrung</p>
+            <p class="location">Wien, Österreich · 25+ Jahre Erfahrung</p>
          </header>
 
          <!-- Über mich -->
@@ -352,7 +403,7 @@
             <h2 class="section-title">Über mich</h2>
             <div class="card">
                <p class="card-description">
-                  Erfahrener Full-Stack Software Developer mit über 20 Jahren Berufserfahrung und Spezialisierung auf moderne Web-
+                  Erfahrener Full-Stack Software Developer mit über 25 Jahren Berufserfahrung und Spezialisierung auf moderne Web-
                   und Mobile-Anwendungen. Ich entwickle skalierbare Lösungen von der Konzeption bis zum Deployment – von
                   Cross-Platform Mobile Apps über Enterprise CMS bis hin zu Desktop-Anwendungen.
                </p>
@@ -361,29 +412,37 @@
                   style="margin-top: 1rem"
                >
                   Seit 14+ Jahren erfolgreich im Remote/Homeoffice tätig, betreue ich Projekte von der ersten Idee bis zum
-                  fertigen Produkt. Meine Stärke liegt in der Verbindung von technischer Exzellenz mit pragmatischer Umsetzung.
+                  fertigen Produkt. Breites technisches Know-how, grafischer Background und ein gutes Gespür für UI/UX Design
+                  durch langjährige Erfahrung mit unterschiedlichsten Projekten. Erfahrung im Projektmanagement, Planung und
+                  agiler Entwicklung – im Team, alleine oder direkt mit Kunden.
                </p>
             </div>
             <div class="card">
                <h3 class="card-title">Kernkompetenzen</h3>
-               <ul>
+               <ul class="kernkompetenzen">
                   <li>
-                     <strong>Cross-Platform Mobile Development</strong> – React Native + Expo für iOS, Android und Web aus einer
-                     Codebasis
+                     <strong>Cross-Platform Mobile Development</strong>
+                     <span class="details">– React Native + Expo für iOS, Android und Web aus einer Codebasis</span>
                   </li>
                   <li>
-                     <strong>Full-Stack Web Development</strong> – Next.js, Astro, PHP mit modernen State-Management-Lösungen
+                     <strong>Full-Stack Web Development</strong>
+                     <span class="details">– Next.js, Astro, PHP mit modernen State-Management-Lösungen</span>
                   </li>
                   <li>
-                     <strong>Desktop Applications</strong> – C#/.NET Windows Forms mit Verschlüsselung, Dateiüberwachung und
-                     System-Tray-Integration
+                     <strong>Desktop Applications</strong>
+                     <span class="details"
+                        >– C#/.NET Windows Forms mit Verschlüsselung, Dateiüberwachung und System-Tray-Integration</span
+                     >
                   </li>
                   <li>
-                     <strong>Enterprise CMS</strong> – Payload CMS und WordPress mit Custom Plugins, API-Integration und
-                     mehrsprachigen Inhalten
+                     <strong>Enterprise CMS</strong>
+                     <span class="details"
+                        >– Payload CMS und WordPress mit Custom Plugins, API-Integration und mehrsprachigen Inhalten</span
+                     >
                   </li>
                   <li>
-                     <strong>KI-gestützte Softwareentwicklung</strong> – Multi-LLM-Orchestrierung, Context Engineering und AI-QA
+                     <strong>KI-gestützte Softwareentwicklung</strong>
+                     <span class="details">– Multi-LLM-Orchestrierung, Context Engineering und AI-QA</span>
                   </li>
                </ul>
             </div>
@@ -529,13 +588,6 @@
 
             <div class="card">
                <h3 class="card-title">Halloween Webpage – Creative Static Site</h3>
-               <p class="card-subtitle">
-                  <a
-                     href="https://halloween-twilight.alex-mastny.com"
-                     target="_blank"
-                     >halloween-twilight.alex-mastny.com</a
-                  >
-               </p>
                <p class="card-subtitle">Astro 5.x, Tailwind CSS 4, Sharp, FFmpeg, Python</p>
                <p class="card-description">
                   Kreative mehrsprachige Storytelling-Website (DE/EN/SK) mit Static Site Generation und Island Architecture. Image
@@ -544,17 +596,18 @@
                   → Video Optimization → Prettify → Remove Comments → Sync Export. WCAG 2.2 AA konform, Playwright E2E Tests,
                   Facebook Campaign mit Mockup Design.
                </p>
+               <div class="tech-tags">
+                  <a
+                     href="https://halloween-twilight.alex-mastny.com"
+                     target="_blank"
+                     class="link-button"
+                     >Website</a
+                  >
+               </div>
             </div>
 
             <div class="card">
                <h3 class="card-title">BrauDeinBier Relaunch – Static Website</h3>
-               <p class="card-subtitle">
-                  <a
-                     href="https://braudeinbier.alex-mastny.com"
-                     target="_blank"
-                     >braudeinbier.alex-mastny.com</a
-                  >
-               </p>
                <p class="card-subtitle">Astro 5.x, Sharp, Python Scripts, Vite</p>
                <p class="card-description">
                   Performance-optimierte Static Website mit responsiver Bildpipeline (Sharp/Manifest für WebP, AVIF).
@@ -563,6 +616,14 @@
                   Formular-Validierung. Python Scripts für Web Scraping und Content Extraction, Manual Chunking für optimierte
                   Bundles.
                </p>
+               <div class="tech-tags">
+                  <a
+                     href="https://braudeinbier.alex-mastny.com"
+                     target="_blank"
+                     class="link-button"
+                     >Website</a
+                  >
+               </div>
             </div>
 
             <div class="card">
@@ -583,13 +644,13 @@
                   <a
                      href="https://github.com/alexmvie/foodtruck-kassasystem-react"
                      target="_blank"
-                     class="tech-tag"
+                     class="link-button"
                      >GitHub</a
                   >
                   <a
                      href="https://alexmvie.github.io/foodtruck-kassasystem-react/"
                      target="_blank"
-                     class="tech-tag"
+                     class="link-button"
                      >Live Demo</a
                   >
                </div>
@@ -612,52 +673,55 @@
 
             <div class="card">
                <h3 class="card-title">preisschilder.at – WordPress + C# Integration</h3>
-               <p class="card-subtitle">
-                  <a
-                     href="https://preisschilder.at"
-                     target="_blank"
-                     >preisschilder.at</a
-                  >
-               </p>
                <p class="card-subtitle">WordPress, PHP, C#/.NET, REST API</p>
                <p class="card-description">
                   Komplexe WordPress-API mit Lizenz- und Benutzerverwaltung für eLabels-System. C#-Windows-Desktop-App für
                   automatisierten Daten-Upload mit HTTP-Client und Authentication. Backend-Integration für Barcode-Generierung und
                   Lizenz-Management.
                </p>
+               <div class="tech-tags">
+                  <a
+                     href="https://preisschilder.at"
+                     target="_blank"
+                     class="link-button"
+                     >Website</a
+                  >
+               </div>
             </div>
 
             <div class="card">
                <h3 class="card-title">monreal.at – Alpine.js Backend</h3>
-               <p class="card-subtitle">
-                  <a
-                     href="https://www.monreal.at"
-                     target="_blank"
-                     >monreal.at</a
-                  >
-               </p>
                <p class="card-subtitle">WordPress, Alpine.js, Members-Plugin, PHP</p>
                <p class="card-description">
                   Individuelles Backend für Hausverwaltungsdaten mit sicherem Upload/Download-System. Benutzerspezifische
                   Rechteverwaltung, geschützter Members-Bereich, Dateizugriff basierend auf Benutzerberechtigungen. WordPress
                   Admin Integration für Members-Verwaltung.
                </p>
+               <div class="tech-tags">
+                  <a
+                     href="https://www.monreal.at"
+                     target="_blank"
+                     class="link-button"
+                     >Website</a
+                  >
+               </div>
             </div>
 
             <div class="card">
                <h3 class="card-title">wein-label.at – WordPress + Bricks</h3>
-               <p class="card-subtitle">
-                  <a
-                     href="https://wein-label.alex-mastny.com"
-                     target="_blank"
-                     >wein-label.alex-mastny.com</a
-                  >
-               </p>
                <p class="card-subtitle">WordPress, Bricks Builder, ACSS/Frames, Advanced Themer, Custom PHP Plugin</p>
                <p class="card-description">
                   Custom Theme mit ACPT-Plugin für eLabels und Barcode-Generierung. Komplexe WordPress-Entwicklung mit Custom Post
                   Types und Meta-Fields. Integration von Barcode-Generierung für Produkt-Labels.
                </p>
+               <div class="tech-tags">
+                  <a
+                     href="https://wein-label.alex-mastny.com"
+                     target="_blank"
+                     class="link-button"
+                     >Website</a
+                  >
+               </div>
             </div>
          </section>
 
