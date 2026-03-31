@@ -616,13 +616,59 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### Ausbildung & Zertifikate
 
-- **Diplom „Full Stack JavaScript Developer" (MERN-Stack)** – WIFI Wien, 2023–2024
-- **Diplom „Webdesign & Producing (WordPress)"** – WIFI Wien, 2021
-- **Zertifikat „Certified C++ Software Developer"** – WIFI Wien, 2006
-- **Flash MX & Actionscript Programmierung** – WIFI Wien, 2003–2004
-- **Apple Einführungskurs** – BEST, Wien, 2003
-- **Internet-Design und -Administration** – Teamwork, Wien, 2002
-- **Office Administrator** – Teamwork, Wien, 2001
+### Full Stack JavaScript Developer – WIFI Wien (2024)
+
+**Tech:** JavaScript, Node.js, Express.js, React.js, MongoDB, MERN-Stack, Git, CI/CD, RESTful APIs, JWT  
+Erfolgreicher Abschluss der Diplom-Ausbildung. Der Schwerpunkt lag auf der Entwicklung serverseitiger Applikationen mit Node.js/Express, dem Einsatz von NoSQL-Datenbanken (MongoDB) sowie der Umsetzung dynamischer Single Page Applications mit React.js (Hooks, Router, State-Management via Redux/Zustand). Das Modul Software-Engineering umfasste zudem agile Methoden, Test Driven Development (TDD), Versionskontrolle (Git), Design Patterns (MVC) und CI/CD-Pipelines. Den Abschluss bildete die eigenständige Realisierung einer komplexen Fullstack-Webapplikation im MERN-Stack.
+
+---
+
+### Web Design und Producing – Werbe Akademie / WIFI Wien (2021)
+
+**Tech:** Web Design, Producing, Grafikdesign, Marktkommunikation, Konzept, Text  
+Erfolgreich abgeschlossener Diplomlehrgang. Der Fokus lag auf der professionellen Konzeption und ganzheitlichen Gestaltung von Webprojekten, inklusive Beratung, Textierung, Grafikdesign und Marktkommunikation.
+
+---
+
+### WIFI Software Developer – WIFI Wien (2006)
+
+**Tech:** C++, OOP, STL, UML, Software-Engineering, Projektmanagement  
+Umfassende Entwickler-Ausbildung, abgeschlossen mit sehr gutem Erfolg. Aufbau fundamentaler Programmierkonzepte mittels C++ (Objektorientierung, Templates, Algorithmen der STL). Ergänzt wurde dies durch klassisches Software-Engineering, umfassend Anforderungsanalysen, Software-Life-Cycle, Entwurfsmethoden mit UML, Prototyping und Qualitätssicherung.
+
+---
+
+### Flash MX Lehrgang – WIFI Wien (2004)
+
+**Tech:** Flash MX, Multimedia-Entwicklung  
+Zertifizierter Lehrgang zur professionellen Erstellung dynamischer und interaktiver Multimedia-Inhalte.
+
+---
+
+### Flash ActionScript – WIFI Wien (2003)
+
+**Tech:** ActionScript  
+Spezialisierungskurs für die skriptbasierte Programmierung interaktiver Web-Elemente. Zeigt frühe Erfahrungen mit objektorientierten Konzepten im Frontend.
+
+---
+
+### Computergrundkurs Grafik/Multimedia/Apple – BEST Training (2003)
+
+**Tech:** Apple macOS, Grafik, Multimedia  
+Grundausbildung in Grafik- und Multimedia-Anwendungen. Erfolgreicher Aufbau von Kompetenzen in digitalen Workflows, bestanden mit ausgezeichnetem Erfolg.
+
+---
+
+### Internet-Design und -Administration – TEAM WORK Schulungen (2002)
+
+**Tech:** HTML, CSS, JavaScript, PHP, SQL/MySQL, Linux, Apache Webserver  
+Intensivlehrgang für Web-Technologien. Aufbau eines soliden Fundaments in der Frontend- (HTML, CSS, JS) und Backend-Entwicklung (dynamische Seiten mit PHP und relationalen Datenbanken). Zusätzlich wurden wichtige Kenntnisse in der Webserver-Administration (Apache, DNS) und der sicheren Linux-Nutzung erworben.
+
+---
+
+### Office AdministratorIn – TEAM WORK Schulungen (2001)
+
+**Tech:** Systemadministration, Linux, Netzwerkarchitektur, Hardware-Troubleshooting, Shell-Programmierung  
+Umfangreiche IT-Infrastruktur-Ausbildung. Aufbau eines tiefen technischen Verständnisses für Hardware, Netzwerkarchitekturen (Client-Server-Modelle) sowie die sichere Systemadministration unter Linux und Windows (inkl. Firewall-, Proxy- und Rechtemanagement) – Wissen, das bis heute beim Deployment und Hosting moderner Web-Apps wertvoll ist.
 
 ### KI-Tools & Erfahrung
 
@@ -769,10 +815,10 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### FoodTruck POS System (Clickable Prototype)
 
+- **Nur für mobile Geräte** – ausschließlich Smartphone (Hochformat) oder Tablet (Querformat). Andere Formate werden nicht unterstützt.
 - **Clickable Prototype** – Live-Prototyp-Erstellung in Beratungssession
 - **KI-gestützte Prototyp-Entwicklung** – Google AI Studio für schnelle Prototypen
 - **Usability-Beratung** – Best Practices für Kunden-Usability
-- **Entwickelt für Tablets** – Optimiert für Touch-Interaktion
 - **Product Grid** mit kategorisierten Menüs
 - **Order Management** – Warenkorb mit CRUD-Operationen
 - **Payment Modal** – Mehrere Zahlungsarten (Bargeld, Karte, Rechnung)
