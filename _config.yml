@@ -1,0 +1,11 @@
+theme: jekyll-theme-cayman
+title: Alexander Mastny – Software Developer Portfolio
+description: Full-Stack Developer mit 20+ Jahren Erfahrung in Cross-Platform Mobile, Web Development, Desktop Applications und KI-gestützter Entwicklung.
+baseurl: ''
+url: 'https://alexmvie.github.io/personal-skills-and-experiences'
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+   - jekyll-seo-tag
