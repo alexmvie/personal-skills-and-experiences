@@ -17,24 +17,30 @@
          crossorigin
       />
       <link
-         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+         href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
          rel="stylesheet"
       />
       <style>
          :root {
-            --bg-primary: #1a1a2e;
-            --bg-secondary: #16213e;
-            --bg-card: #1f2937;
-            --bg-card-hover: #374151;
-            --text-primary: #f9fafb;
-            --text-secondary: #d1d5db;
-            --text-muted: #9ca3af;
-            --accent-primary: #6366f1;
-            --accent-secondary: #8b5cf6;
-            --accent-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-            --border-color: #374151;
-            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+            --sand-50: #faf8f5;
+            --sand-100: #f5f0e8;
+            --sand-200: #e8dfd0;
+            --sand-300: #d4c4a8;
+            --sand-400: #c4a77d;
+            --sand-500: #a38b5c;
+            --sand-600: #8b7355;
+            --sand-700: #6b5940;
+            --sand-800: #4a3f2e;
+            --sand-900: #2d261e;
+            --text-primary: #2d261e;
+            --text-secondary: #6b5940;
+            --text-muted: #8b7355;
+            --accent: #a38b5c;
+            --accent-light: #c4a77d;
+            --bg-primary: #faf8f5;
+            --bg-secondary: #f5f0e8;
+            --bg-card: #ffffff;
+            --border-color: #e8dfd0;
          }
 
          * {
@@ -45,106 +51,164 @@
 
          body {
             font-family:
-               'Inter',
+               'Nunito',
                -apple-system,
                BlinkMacSystemFont,
-               'Segoe UI',
-               Roboto,
                sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
-            line-height: 1.6;
+            line-height: 1.7;
             min-height: 100vh;
          }
 
          .container {
-            max-width: 900px;
+            max-width: 100%;
             margin: 0 auto;
-            padding: 2rem 1.5rem;
+            padding: 1.5rem 1rem;
+         }
+
+         @media (min-width: 768px) {
+            .container {
+               max-width: 800px;
+               padding: 2rem 1.5rem;
+            }
+         }
+
+         @media (min-width: 1024px) {
+            .container {
+               max-width: 900px;
+               padding: 3rem 2rem;
+            }
          }
 
          /* Header */
          .header {
             text-align: center;
-            margin-bottom: 3rem;
-            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            padding: 2rem 1.5rem;
             background: var(--bg-secondary);
-            border-radius: 16px;
+            border-radius: 12px;
             border: 1px solid var(--border-color);
-            box-shadow: var(--shadow-lg);
+         }
+
+         @media (min-width: 768px) {
+            .header {
+               margin-bottom: 3rem;
+               padding: 3rem 2rem;
+               border-radius: 16px;
+            }
          }
 
          .header h1 {
-            font-size: 2.5rem;
+            font-size: 1.75rem;
             font-weight: 700;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--text-primary);
             margin-bottom: 0.5rem;
          }
 
+         @media (min-width: 768px) {
+            .header h1 {
+               font-size: 2.5rem;
+            }
+         }
+
          .header .subtitle {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            font-weight: 400;
+            font-size: 1rem;
+            color: var(--accent);
+            font-weight: 600;
+         }
+
+         @media (min-width: 768px) {
+            .header .subtitle {
+               font-size: 1.25rem;
+            }
          }
 
          .header .location {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             margin-top: 0.5rem;
          }
 
          /* Section */
          .section {
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
+         }
+
+         @media (min-width: 768px) {
+            .section {
+               margin-bottom: 2.5rem;
+            }
          }
 
          .section-title {
-            font-size: 1.5rem;
-            font-weight: 600;
+            font-size: 1.25rem;
+            font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-primary);
+            border-bottom: 2px solid var(--accent);
             display: inline-block;
+         }
+
+         @media (min-width: 768px) {
+            .section-title {
+               font-size: 1.5rem;
+            }
          }
 
          /* Cards */
          .card {
             background: var(--bg-card);
-            border-radius: 12px;
-            padding: 1.5rem;
+            border-radius: 10px;
+            padding: 1.25rem;
             margin-bottom: 1rem;
             border: 1px solid var(--border-color);
-            transition: all 0.2s ease;
          }
 
-         .card:hover {
-            background: var(--bg-card-hover);
-            box-shadow: var(--shadow);
-            transform: translateY(-2px);
+         @media (min-width: 768px) {
+            .card {
+               border-radius: 12px;
+               padding: 1.5rem;
+            }
          }
 
          .card-title {
-            font-size: 1.1rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
             color: var(--text-primary);
             margin-bottom: 0.5rem;
          }
 
+         @media (min-width: 768px) {
+            .card-title {
+               font-size: 1.1rem;
+            }
+         }
+
          .card-subtitle {
-            font-size: 0.85rem;
-            color: var(--accent-primary);
-            font-weight: 500;
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 600;
             margin-bottom: 0.75rem;
+         }
+
+         @media (min-width: 768px) {
+            .card-subtitle {
+               font-size: 0.85rem;
+            }
          }
 
          .card-description {
             color: var(--text-secondary);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             line-height: 1.7;
+         }
+
+         @media (min-width: 768px) {
+            .card-description {
+               font-size: 0.95rem;
+            }
          }
 
          /* Tech Tags */
@@ -156,24 +220,28 @@
          }
 
          .tech-tag {
-            background: rgba(99, 102, 241, 0.15);
-            color: var(--accent-primary);
+            background: var(--sand-100);
+            color: var(--sand-700);
             padding: 0.25rem 0.75rem;
             border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 500;
-            border: 1px solid rgba(99, 102, 241, 0.3);
+            font-size: 0.75rem;
+            font-weight: 600;
+            border: 1px solid var(--sand-200);
+         }
+
+         @media (min-width: 768px) {
+            .tech-tag {
+               font-size: 0.8rem;
+            }
          }
 
          /* Links */
          a {
-            color: var(--accent-primary);
+            color: var(--accent);
             text-decoration: none;
-            transition: color 0.2s ease;
          }
 
          a:hover {
-            color: var(--accent-secondary);
             text-decoration: underline;
          }
 
@@ -188,88 +256,85 @@
             padding-left: 1.5rem;
             margin-bottom: 0.5rem;
             color: var(--text-secondary);
+            font-size: 0.9rem;
+         }
+
+         @media (min-width: 768px) {
+            ul li {
+               font-size: 0.95rem;
+            }
          }
 
          ul li::before {
             content: '→';
             position: absolute;
             left: 0;
-            color: var(--accent-primary);
-            font-weight: 600;
+            color: var(--accent);
+            font-weight: 700;
          }
 
          /* Contact Section */
          .contact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: 1fr;
             gap: 1rem;
+         }
+
+         @media (min-width: 768px) {
+            .contact-grid {
+               grid-template-columns: repeat(3, 1fr);
+            }
          }
 
          .contact-item {
             background: var(--bg-card);
-            padding: 1.25rem;
+            padding: 1rem;
             border-radius: 10px;
             border: 1px solid var(--border-color);
             text-align: center;
          }
 
          .contact-item .label {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.25rem;
          }
 
          .contact-item .value {
-            font-weight: 500;
+            font-weight: 600;
             color: var(--text-primary);
+            font-size: 0.9rem;
          }
 
          /* Footer */
          .footer {
             text-align: center;
-            margin-top: 3rem;
-            padding-top: 2rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
             border-top: 1px solid var(--border-color);
             color: var(--text-muted);
             font-size: 0.85rem;
          }
 
-         /* Responsive */
-         @media (max-width: 768px) {
-            .container {
-               padding: 1rem;
-            }
-
-            .header {
-               padding: 2rem 1rem;
-            }
-
-            .header h1 {
-               font-size: 2rem;
-            }
-
-            .header .subtitle {
-               font-size: 1.1rem;
-            }
-
-            .section-title {
-               font-size: 1.3rem;
-            }
-
-            .card {
-               padding: 1.25rem;
+         @media (min-width: 768px) {
+            .footer {
+               margin-top: 3rem;
+               padding-top: 2rem;
             }
          }
 
-         /* Smooth scrolling */
-         html {
-            scroll-behavior: smooth;
+         /* Strong text in lists */
+         ul li strong {
+            color: var(--text-primary);
          }
 
-         /* Selection */
-         ::selection {
-            background: var(--accent-primary);
-            color: white;
+         /* Emphasis */
+         em {
+            color: var(--accent);
+         }
+
+         strong {
+            color: var(--text-primary);
          }
       </style>
    </head>
@@ -299,12 +364,8 @@
                   fertigen Produkt. Meine Stärke liegt in der Verbindung von technischer Exzellenz mit pragmatischer Umsetzung.
                </p>
             </div>
-         </section>
-
-         <!-- Kernkompetenzen -->
-         <section class="section">
-            <h2 class="section-title">Kernkompetenzen</h2>
             <div class="card">
+               <h3 class="card-title">Kernkompetenzen</h3>
                <ul>
                   <li>
                      <strong>Cross-Platform Mobile Development</strong> – React Native + Expo für iOS, Android und Web aus einer
@@ -332,62 +393,69 @@
          <section class="section">
             <h2 class="section-title">Technologie-Stack</h2>
             <div class="card">
-               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem">
-                  <div>
-                     <strong style="color: var(--accent-primary)">Frontend</strong>
-                     <p
-                        class="card-description"
-                        style="margin-top: 0.5rem"
-                     >
-                        React, React Native, Next.js, Astro, TypeScript, Tailwind CSS
-                     </p>
-                  </div>
-                  <div>
-                     <strong style="color: var(--accent-primary)">Backend</strong>
-                     <p
-                        class="card-description"
-                        style="margin-top: 0.5rem"
-                     >
-                        Node.js, Express.js, PHP, Firebase, Supabase
-                     </p>
-                  </div>
-                  <div>
-                     <strong style="color: var(--accent-primary)">CMS</strong>
-                     <p
-                        class="card-description"
-                        style="margin-top: 0.5rem"
-                     >
-                        Payload CMS, WordPress (Bricks, Elementor Pro)
-                     </p>
-                  </div>
-                  <div>
-                     <strong style="color: var(--accent-primary)">Mobile</strong>
-                     <p
-                        class="card-description"
-                        style="margin-top: 0.5rem"
-                     >
-                        Expo SDK, React Native Reanimated, Expo Router
-                     </p>
-                  </div>
-                  <div>
-                     <strong style="color: var(--accent-primary)">Desktop</strong>
-                     <p
-                        class="card-description"
-                        style="margin-top: 0.5rem"
-                     >
-                        C#/.NET 7.0, Windows Forms, Newtonsoft.Json
-                     </p>
-                  </div>
-                  <div>
-                     <strong style="color: var(--accent-primary)">Build & Deploy</strong>
-                     <p
-                        class="card-description"
-                        style="margin-top: 0.5rem"
-                     >
-                        Vite, Turborepo, EAS Build, Docker, Firebase
-                     </p>
-                  </div>
-               </div>
+               <p class="card-description">
+                  <strong>Frontend:</strong> React, React Native, Next.js, Astro, TypeScript, Tailwind CSS
+               </p>
+               <p class="card-description"><strong>Backend:</strong> Node.js, Express.js, PHP, Firebase, Supabase</p>
+               <p class="card-description"><strong>CMS:</strong> Payload CMS, WordPress (Bricks, Elementor Pro)</p>
+               <p class="card-description"><strong>Mobile:</strong> Expo SDK, React Native Reanimated, Expo Router</p>
+               <p class="card-description"><strong>Desktop:</strong> C#/.NET 7.0, Windows Forms, Newtonsoft.Json</p>
+               <p class="card-description"><strong>Build:</strong> Vite, Turborepo, EAS Build, Gradle</p>
+               <p class="card-description"><strong>Deployment:</strong> Docker, FTP, Firebase Hosting, GitHub Pages</p>
+            </div>
+         </section>
+
+         <!-- KI-gestützte Entwicklung -->
+         <section class="section">
+            <h2 class="section-title">KI-gestützte Entwicklung</h2>
+            <div class="card">
+               <p class="card-description">Erfahrung mit Multi-LLM-Orchestrierung und strategischem Model Routing:</p>
+               <ul>
+                  <li><strong>Antigravity</strong> – Multi-LLM Plattform für UI/Design, nano banana für Grafiken</li>
+                  <li>
+                     <strong>Windsurf</strong> – AI-native IDE mit Claude Sonnet 4.6 für komplexen Code, swe-1.5 für einfache
+                     Aufgaben
+                  </li>
+                  <li>
+                     <strong>Cline</strong> – VS Code Extension mit verschiedenen LLMs (mimo-v2-pro als kostenlose Alternative)
+                  </li>
+                  <li>
+                     <strong>Context Engineering</strong> – Projekt-spezifische Konfigurationen (claude.md, windsurfrules) für
+                     konsistente AI-Ergebnisse
+                  </li>
+                  <li>
+                     <strong>Quality Assurance</strong> – Rails/Guardrails für projekt-spezifische Regeln, Playwright E2E Testing
+                     für AI-generierten Code
+                  </li>
+                  <li>
+                     <strong>Projekt-Management</strong> – Feature-basierte Milestones, Config Versionierung innerhalb der
+                     Konfigurationsdateien
+                  </li>
+               </ul>
+            </div>
+         </section>
+
+         <!-- Arbeitsweise -->
+         <section class="section">
+            <h2 class="section-title">Arbeitsweise</h2>
+            <div class="card">
+               <ul>
+                  <li>
+                     <strong>Remote/Homeoffice</strong> seit 14+ Jahren – erfolgreich remote aus Wien für internationale Kunden
+                  </li>
+                  <li><strong>TypeScript-First</strong> für type-safety über alle Projekte, strikte Typisierung ohne 'any'</li>
+                  <li>
+                     <strong>Clean Architecture</strong> mit Atomic Design (Atoms, Molecules, Organisms) und Separation of
+                     Concerns
+                  </li>
+                  <li><strong>Agile Methoden</strong> mit Feature-basierten Milestones und iterativer Entwicklung</li>
+                  <li><strong>Testing</strong> mit Playwright E2E Tests, Visual Regression Testing und Cross-Browser Testing</li>
+                  <li>
+                     <strong>Code Quality</strong> – BEM CSS Methodology, Custom Hooks für wiederverwendbare Logik, Error
+                     Boundaries
+                  </li>
+                  <li><strong>Documentation</strong> – Ausführliche Code-Dokumentation und README-Dateien für alle Projekte</li>
+               </ul>
             </div>
          </section>
 
@@ -397,48 +465,65 @@
 
             <div class="card">
                <h3 class="card-title">Fenix-Win2Web – Windows Desktop Application</h3>
-               <p class="card-subtitle">C#/.NET 7.0, Windows Forms, AES Encryption, FileSystemWatcher</p>
+               <p class="card-subtitle">C#/.NET 7.0, Windows Forms, AES Encryption, FileSystemWatcher, Newtonsoft.Json</p>
                <p class="card-description">
-                  Desktop-Anwendung für automatisierten Datei-Upload mit Echtzeit-Überwachung. FileSystemWatcher für
-                  Verzeichnis-Monitoring, AES-Verschlüsselung für sensible Konfigurationsdaten, asynchrone HTTP-Kommunikation mit
-                  Retry-Logik. System-Tray-Integration, Single-Instance-Enforcement, mehrsprachige UI (DE/EN).
+                  Desktop-Anwendung für automatisierten Datei-Upload mit Echtzeit-Überwachung. Implementierung: FileSystemWatcher
+                  für Verzeichnis-Monitoring, AES-Verschlüsselung (Aes.Create, Rfc2898DeriveBytes, SHA256) für sensible
+                  Konfigurationsdaten, asynchrone HTTP-Kommunikation mit Retry-Logik. System-Tray-Integration via NotifyIcon,
+                  Single-Instance-Enforcement mit Mutex, mehrsprachige UI (DE/EN) über Dictionary-basierte Localization.
+                  Thread-safe Logging mit Rotation und Event-basiertem UI-Update.
                </p>
             </div>
 
             <div class="card">
                <h3 class="card-title">T-Mobile Corporate Mobile Prototypen</h3>
-               <p class="card-subtitle">React Native, Expo SDK 53, Expo AV, Linear Gradient</p>
+               <p class="card-subtitle">
+                  React Native, Expo SDK 53, Expo AV, Linear Gradient, SVG Transformer, React Native Reanimated
+               </p>
                <p class="card-description">
-                  Cross-Platform Mobile Prototypen mit Video-Intro (Auto-Play), Swipe-Navigation über 6 Screens und Corporate
-                  Design System. Mehrere Varianten: Expo (Hauptimplementierung), Kotlin (Video-Feature), AnimStudy.
+                  Cross-Platform Mobile Prototypen für T-Mobile mit Video-Intro (Auto-Play mit Auto-Advance), Swipe-Navigation
+                  über 6 Screens und Corporate Design System (Magenta Branding). Implementierung: Expo AV für Video-Playback,
+                  Linear Gradient für Backgrounds, SVG Transformer für T-Mobile Logo als React Component. Mehrere Varianten: Expo
+                  (Hauptimplementierung), Kotlin (nur Video-Feature), AnimStudy. Product Data JSON für konfigurierbare
+                  Produkt-Daten, Device Info Detection via Expo Device.
                </p>
             </div>
 
             <div class="card">
                <h3 class="card-title">GymTracker Antigravity – Fitness App</h3>
-               <p class="card-subtitle">React Native, Expo SDK 54, Firebase Firestore + Auth, Zustand</p>
+               <p class="card-subtitle">
+                  React Native, Expo SDK 54, Firebase Firestore + Auth, Zustand, Immer, React Native Reanimated
+               </p>
                <p class="card-description">
-                  Vollständige Fitness-Tracking-App mit Workout Builder (Drag & Drop), Live-Session-Tracking, Statistiken und
-                  Real-Time-Chat. Offline-First-Architektur mit Firebase-Synchronisation.
+                  Vollständige Fitness-Tracking-App mit Workout Builder (Drag & Drop), Live-Session-Tracking mit Timer,
+                  Statistiken und Real-Time-Chat. Architektur: Context API für Multi-Provider State Management (Auth, Workout,
+                  NumberPad, Toast, AppReady), Offline-First mit useOfflineFirebase, Error Boundaries für Graceful Error Handling.
+                  Features: Custom Fonts (InterTight), Haptics via Expo Haptics, Splash Screen, EAS Build für APK-Generierung.
                </p>
             </div>
 
             <div class="card">
                <h3 class="card-title">QUILL NextJS PageBuilder – Full-Stack CMS</h3>
-               <p class="card-subtitle">Next.js 15, Payload CMS 3.20, Turborepo, TypeScript</p>
+               <p class="card-subtitle">Next.js 15, Payload CMS 3.20, Turborepo, TypeScript, Zod, @dnd-kit, Lexical, Sharp</p>
                <p class="card-description">
-                  Enterprise Page Builder mit Block-Registry, Drag & Drop, Media Management und mehrsprachigen Inhalten.
-                  Monorepo-Architektur mit Docker-Deployment.
+                  Enterprise Page Builder mit Block-Registry (registerBlock, getBlockConfig, PageRenderer), Drag & Drop via
+                  @dnd-kit/sortable, Media Management mit Upload/Optimization/Folders und mehrsprachigen Inhalten (DE/EN/SK).
+                  Monorepo-Architektur mit packages/_ und apps/_ Workspaces, Docker-Deployment mit Caddy Reverse Proxy.
+                  SQLite-Datenbank, Rich Text Editor via Lexical, Zod für Schema-basierte Validierung, Playwright E2E Tests.
                </p>
             </div>
 
             <div class="card">
                <h3 class="card-title">Alex Mastny Homepage – Next.js Portfolio</h3>
-               <p class="card-subtitle">Next.js 15, TypeScript, Tailwind CSS, DaisyUI, TipTap</p>
+               <p class="card-subtitle">
+                  Next.js 15, TypeScript, Tailwind CSS, DaisyUI, TipTap, @dnd-kit, React Hook Form, Sharp, Playwright
+               </p>
                <p class="card-description">
-                  <em>Projekt aktuell in Entwicklung.</em> Vollständige Portfolio-Website mit integriertem Admin-Interface. 35+
-                  Portfolio-Projekte mit Filterung, Suche und Kategorisierung. Admin-Bereich mit Dashboard, Projekt-Management,
-                  Image Library mit Screenshot Capture.
+                  <em>Projekt aktuell in Entwicklung.</em> Vollständige Portfolio-Website mit integriertem Admin-Interface.
+                  Features: 35+ Portfolio-Projekte mit Filterung, Suche und Kategorisierung. Admin-Bereich mit Dashboard,
+                  Projekt-Management (CRUD), Technology/Category/Tag-Verwaltung, Image Library mit Upload, Screenshot Capture mit
+                  Streaming API und Real-Time Progress. Architektur: Next.js App Router, AdminGuard für Access Control, API
+                  Endpoints für Projects/Images/Screenshots. Deployment: Vercel-optimiert.
                </p>
             </div>
 
@@ -451,10 +536,13 @@
                      >halloween-twilight.alex-mastny.com</a
                   >
                </p>
-               <p class="card-subtitle">Astro 5.x, Tailwind CSS 4, Sharp, FFmpeg</p>
+               <p class="card-subtitle">Astro 5.x, Tailwind CSS 4, Sharp, FFmpeg, Python</p>
                <p class="card-description">
-                  Kreative mehrsprachige Storytelling-Website (DE/EN/SK) mit Static Site Generation. AI-basiertes Image Upscaling,
-                  Video Optimization, WCAG 2.2 AA konform.
+                  Kreative mehrsprachige Storytelling-Website (DE/EN/SK) mit Static Site Generation und Island Architecture. Image
+                  Processing Pipeline: Sharp für Crop/Resize/Optimize, AI-basiertes Image Upscaling, Responsive Images (WebP,
+                  AVIF, Multiple Sizes). Video Optimization via FFmpeg und Python Scripts. Multi-Step Build Pipeline: Astro Build
+                  → Video Optimization → Prettify → Remove Comments → Sync Export. WCAG 2.2 AA konform, Playwright E2E Tests,
+                  Facebook Campaign mit Mockup Design.
                </p>
             </div>
 
@@ -467,19 +555,29 @@
                      >braudeinbier.alex-mastny.com</a
                   >
                </p>
-               <p class="card-subtitle">Astro 5.x, Sharp, Python Scripts</p>
+               <p class="card-subtitle">Astro 5.x, Sharp, Python Scripts, Vite</p>
                <p class="card-description">
-                  Performance-optimierte Static Website mit responsiver Bildpipeline. DSGVO-konformes Self-Hosting,
-                  Merchandise-Shop mit Warenkorb-Logik.
+                  Performance-optimierte Static Website mit responsiver Bildpipeline (Sharp/Manifest für WebP, AVIF).
+                  DSGVO-konformes Self-Hosting für Webfonts, SEO mit Canonical/Open Graph/Twitter Cards/LocalBusiness JSON-LD.
+                  Features: Merchandise-Shop mit interaktivem Flow und Warenkorb-Logik, Mail-Checkout-Erstellung, clientseitige
+                  Formular-Validierung. Python Scripts für Web Scraping und Content Extraction, Manual Chunking für optimierte
+                  Bundles.
                </p>
             </div>
 
             <div class="card">
                <h3 class="card-title">FoodTruck POS System – Clickable Prototype</h3>
+               <p class="card-subtitle">
+                  Nur für mobile Geräte – ausschließlich Smartphone (Hochformat) oder Tablet (Querformat). Andere Formate werden
+                  nicht unterstützt.
+               </p>
                <p class="card-subtitle">React, useState, Motion, Design Tokens</p>
                <p class="card-description">
-                  <strong>Nur für mobile Geräte</strong> – ausschließlich Smartphone (Hochformat) oder Tablet (Querformat).
-                  Live-Prototyp für Tablet-basierte Kassenlösung mit Product Grid, Order Management und Payment Modal.
+                  Live-Prototyp für Tablet-basierte Kassenlösung, entwickelt in Beratungssession mit KI-Unterstützung (Google AI
+                  Studio). Features: Product Grid mit kategorisierten Menüs, Order Management mit CRUD-Operationen, Payment Modal
+                  mit mehreren Zahlungsarten (Bargeld, Karte, Rechnung). Responsive Design: Mobile Portrait (Split Layout),
+                  Landscape & Desktop. Dynamic Button Text System, State Management mit useState, Animationen via Motion. GitHub
+                  Repository mit Live Demo auf GitHub Pages.
                </p>
                <div class="tech-tags">
                   <a
@@ -499,10 +597,16 @@
 
             <div class="card">
                <h3 class="card-title">Antigravity HealthTracker – Mobile Health App</h3>
-               <p class="card-subtitle">React Native, Expo SDK 54, Firebase, Zustand, i18next</p>
+               <p class="card-subtitle">
+                  React Native, Expo SDK 54, Firebase Firestore + Auth, Zustand, AsyncStorage, i18next, Expo Localization,
+                  Supabase Storage
+               </p>
                <p class="card-description">
                   Modulares Health-Tracking-System mit 6 Gesundheitsmodulen: Blutdruck, SpO2, Gewicht, Körperzusammensetzung,
-                  Metabolisch, Wellness. Multi-User-Support, Progress Photos mit Cloud Storage.
+                  Metabolisch, Wellness. Modul-Toggle-System für benutzerdefinierte Aktivierung. Multi-User-Support mit Person
+                  Chooser und Profile Editor. Progress Photos mit Expo Image Picker & Manipulator, Cloud Storage via Supabase.
+                  Charts via react-native-chart-kit, Firebase Batch Operations für effiziente Datenlöschung. Dark Noble Design mit
+                  Custom Fonts (Outfit, Inter), i18next für Internationalisierung (EN/DE).
                </p>
             </div>
 
@@ -517,8 +621,9 @@
                </p>
                <p class="card-subtitle">WordPress, PHP, C#/.NET, REST API</p>
                <p class="card-description">
-                  Komplexe WordPress-API mit Lizenz- und Benutzerverwaltung. C#-Desktop-App für automatisierten Daten-Upload mit
-                  HTTP-Client und Authentication.
+                  Komplexe WordPress-API mit Lizenz- und Benutzerverwaltung für eLabels-System. C#-Windows-Desktop-App für
+                  automatisierten Daten-Upload mit HTTP-Client und Authentication. Backend-Integration für Barcode-Generierung und
+                  Lizenz-Management.
                </p>
             </div>
 
@@ -531,10 +636,11 @@
                      >monreal.at</a
                   >
                </p>
-               <p class="card-subtitle">WordPress, Alpine.js, Members-Plugin</p>
+               <p class="card-subtitle">WordPress, Alpine.js, Members-Plugin, PHP</p>
                <p class="card-description">
                   Individuelles Backend für Hausverwaltungsdaten mit sicherem Upload/Download-System. Benutzerspezifische
-                  Rechteverwaltung.
+                  Rechteverwaltung, geschützter Members-Bereich, Dateizugriff basierend auf Benutzerberechtigungen. WordPress
+                  Admin Integration für Members-Verwaltung.
                </p>
             </div>
 
@@ -547,84 +653,100 @@
                      >wein-label.alex-mastny.com</a
                   >
                </p>
-               <p class="card-subtitle">WordPress, Bricks Builder, ACSS/Frames</p>
+               <p class="card-subtitle">WordPress, Bricks Builder, ACSS/Frames, Advanced Themer, Custom PHP Plugin</p>
                <p class="card-description">
                   Custom Theme mit ACPT-Plugin für eLabels und Barcode-Generierung. Komplexe WordPress-Entwicklung mit Custom Post
-                  Types.
+                  Types und Meta-Fields. Integration von Barcode-Generierung für Produkt-Labels.
                </p>
             </div>
          </section>
 
-         <!-- Bildung -->
+         <!-- Bildung & Zertifikate -->
          <section class="section">
             <h2 class="section-title">Bildung & Zertifikate</h2>
 
             <div class="card">
                <h3 class="card-title">Full Stack JavaScript Developer – WIFI Wien (2024)</h3>
-               <p class="card-subtitle">JavaScript, Node.js, Express.js, React.js, MongoDB, MERN-Stack</p>
+               <p class="card-subtitle">
+                  JavaScript, Node.js, Express.js, React.js, MongoDB, MERN-Stack, Git, CI/CD, RESTful APIs, JWT
+               </p>
                <p class="card-description">
-                  Erfolgreicher Abschluss der Diplom-Ausbildung. Schwerpunkt auf serverseitige Applikationen mit Node.js/Express,
-                  NoSQL-Datenbanken (MongoDB) und Single Page Applications mit React.js. Software-Engineering mit agilen Methoden,
-                  TDD, Git, Design Patterns und CI/CD-Pipelines.
+                  Erfolgreicher Abschluss der Diplom-Ausbildung. Der Schwerpunkt lag auf der Entwicklung serverseitiger
+                  Applikationen mit Node.js/Express, dem Einsatz von NoSQL-Datenbanken (MongoDB) sowie der Umsetzung dynamischer
+                  Single Page Applications mit React.js (Hooks, Router, State-Management via Redux/Zustand). Das Modul
+                  Software-Engineering umfasste zudem agile Methoden, Test Driven Development (TDD), Versionskontrolle (Git),
+                  Design Patterns (MVC) und CI/CD-Pipelines. Den Abschluss bildete die eigenständige Realisierung einer komplexen
+                  Fullstack-Webapplikation im MERN-Stack.
                </p>
             </div>
 
             <div class="card">
-               <h3 class="card-title">Web Design und Producing – WIFI Wien (2021)</h3>
-               <p class="card-subtitle">Web Design, Producing, Grafikdesign, Marktkommunikation</p>
+               <h3 class="card-title">Web Design und Producing – Werbe Akademie / WIFI Wien (2021)</h3>
+               <p class="card-subtitle">Web Design, Producing, Grafikdesign, Marktkommunikation, Konzept, Text</p>
                <p class="card-description">
-                  Erfolgreich abgeschlossener Diplomlehrgang. Fokus auf professionelle Konzeption und ganzheitliche Gestaltung von
-                  Webprojekten.
+                  Erfolgreich abgeschlossener Diplomlehrgang. Der Fokus lag auf der professionellen Konzeption und ganzheitlichen
+                  Gestaltung von Webprojekten, inklusive Beratung, Textierung, Grafikdesign und Marktkommunikation.
                </p>
             </div>
 
             <div class="card">
                <h3 class="card-title">WIFI Software Developer – WIFI Wien (2006)</h3>
-               <p class="card-subtitle">C++, OOP, STL, UML, Software-Engineering</p>
+               <p class="card-subtitle">C++, OOP, STL, UML, Software-Engineering, Projektmanagement</p>
                <p class="card-description">
-                  Umfassende Entwickler-Ausbildung, abgeschlossen mit sehr gutem Erfolg. Fundamentale Programmierkonzepte mit C++,
-                  Software-Engineering mit UML, Prototyping und Qualitätssicherung.
+                  Umfassende Entwickler-Ausbildung, abgeschlossen mit sehr gutem Erfolg. Aufbau fundamentaler Programmierkonzepte
+                  mittels C++ (Objektorientierung, Templates, Algorithmen der STL). Ergänzt wurde dies durch klassisches
+                  Software-Engineering, umfassend Anforderungsanalysen, Software-Life-Cycle, Entwurfsmethoden mit UML, Prototyping
+                  und Qualitätssicherung.
                </p>
             </div>
 
             <div class="card">
-               <h3 class="card-title">Weitere Zertifikate</h3>
-               <ul>
-                  <li><strong>Flash MX Lehrgang</strong> – WIFI Wien, 2004</li>
-                  <li><strong>Flash ActionScript</strong> – WIFI Wien, 2003</li>
-                  <li><strong>Computergrundkurs Grafik/Multimedia/Apple</strong> – BEST Training, 2003</li>
-                  <li><strong>Internet-Design und -Administration</strong> – TEAM WORK, 2002</li>
-                  <li><strong>Office AdministratorIn</strong> – TEAM WORK, 2001</li>
-               </ul>
+               <h3 class="card-title">Flash MX Lehrgang – WIFI Wien (2004)</h3>
+               <p class="card-subtitle">Flash MX, Multimedia-Entwicklung</p>
+               <p class="card-description">
+                  Zertifizierter Lehrgang zur professionellen Erstellung dynamischer und interaktiver Multimedia-Inhalte.
+               </p>
             </div>
-         </section>
 
-         <!-- KI-gestützte Entwicklung -->
-         <section class="section">
-            <h2 class="section-title">KI-gestützte Entwicklung</h2>
             <div class="card">
-               <ul>
-                  <li><strong>Antigravity</strong> – Multi-LLM Plattform für UI/Design</li>
-                  <li><strong>Windsurf</strong> – AI-native IDE mit Claude Sonnet 4.6</li>
-                  <li><strong>Cline</strong> – VS Code Extension mit verschiedenen LLMs</li>
-                  <li><strong>Context Engineering</strong> – Projekt-spezifische Konfigurationen (claude.md, windsurfrules)</li>
-                  <li><strong>Quality Assurance</strong> – Rails/Guardrails, Playwright E2E Testing</li>
-               </ul>
+               <h3 class="card-title">Flash ActionScript – WIFI Wien (2003)</h3>
+               <p class="card-subtitle">ActionScript</p>
+               <p class="card-description">
+                  Spezialisierungskurs für die skriptbasierte Programmierung interaktiver Web-Elemente. Zeigt frühe Erfahrungen
+                  mit objektorientierten Konzepten im Frontend.
+               </p>
             </div>
-         </section>
 
-         <!-- Arbeitsweise -->
-         <section class="section">
-            <h2 class="section-title">Arbeitsweise</h2>
             <div class="card">
-               <ul>
-                  <li><strong>Remote/Homeoffice</strong> seit 14+ Jahren</li>
-                  <li><strong>TypeScript-First</strong> für type-safety über alle Projekte</li>
-                  <li><strong>Clean Architecture</strong> mit Atomic Design und Separation of Concerns</li>
-                  <li><strong>Agile Methoden</strong> mit Feature-basierten Milestones</li>
-                  <li><strong>Testing</strong> mit Playwright E2E Tests und Visual Regression</li>
-                  <li><strong>Code Quality</strong> – BEM CSS, Custom Hooks, Error Boundaries</li>
-               </ul>
+               <h3 class="card-title">Computergrundkurs Grafik/Multimedia/Apple – BEST Training (2003)</h3>
+               <p class="card-subtitle">Apple macOS, Grafik, Multimedia</p>
+               <p class="card-description">
+                  Grundausbildung in Grafik- und Multimedia-Anwendungen. Erfolgreicher Aufbau von Kompetenzen in digitalen
+                  Workflows, bestanden mit ausgezeichnetem Erfolg.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Internet-Design und -Administration – TEAM WORK Schulungen (2002)</h3>
+               <p class="card-subtitle">HTML, CSS, JavaScript, PHP, SQL/MySQL, Linux, Apache Webserver</p>
+               <p class="card-description">
+                  Intensivlehrgang für Web-Technologien. Aufbau eines soliden Fundaments in der Frontend- (HTML, CSS, JS) und
+                  Backend-Entwicklung (dynamische Seiten mit PHP und relationalen Datenbanken). Zusätzlich wurden wichtige
+                  Kenntnisse in der Webserver-Administration (Apache, DNS) und der sicheren Linux-Nutzung erworben.
+               </p>
+            </div>
+
+            <div class="card">
+               <h3 class="card-title">Office AdministratorIn – TEAM WORK Schulungen (2001)</h3>
+               <p class="card-subtitle">
+                  Systemadministration, Linux, Netzwerkarchitektur, Hardware-Troubleshooting, Shell-Programmierung
+               </p>
+               <p class="card-description">
+                  Umfangreiche IT-Infrastruktur-Ausbildung. Aufbau eines tiefen technischen Verständnisses für Hardware,
+                  Netzwerkarchitekturen (Client-Server-Modelle) sowie die sichere Systemadministration unter Linux und Windows
+                  (inkl. Firewall-, Proxy- und Rechtemanagement) – Wissen, das bis heute beim Deployment und Hosting moderner
+                  Web-Apps wertvoll ist.
+               </p>
             </div>
          </section>
 
