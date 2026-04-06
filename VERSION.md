@@ -14,7 +14,7 @@
   - Updated highlights to reference the new direct links
   - Enabled full anchor-based navigation across the portfolio
 - **Files Modified:** index.html, index-en.html, VERSION.md
-- **Commits:** [To be added after commit]
+- **Commits:** 8176fa1
 
 ### Version 2.6.0 (06.04.2026)
 - **Type:** MINOR – Enhanced navigation and comprehensive updates
