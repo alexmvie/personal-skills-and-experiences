@@ -263,6 +263,17 @@ Stop and ask for clarification if:
 - Questions about appropriate detail level
 - Need for English translation approach
 
+### Public Highlights & Social Media Automation
+
+- **Public Highlights Check:** Before finalizing ANY update, the agent MUST explicitly ask the user: "Should a public highlight be created for this update in the 'Latest Highlights' section of the website?"
+- **Social Media Automation:** If a highlight is created, automatically generate a file named `socialmedia-update-post.txt`.
+  - **Tone:** Professional, factual, and concise.
+  - **Strict Constraint:** NO emojis allowed.
+  - **Mandatory Content:** Always include the following links:
+    - DE: https://alexmvie.github.io/personal-skills-and-experiences/index.html
+    - EN: https://alexmvie.github.io/personal-skills-and-experiences/index-en.html
+- **File Management:** The `socialmedia-update-post.txt` file should be overwritten or newly created with every new public highlight.
+
 ---
 
 ## Success Criteria

@@ -1,10 +1,21 @@
 # Version History
 
-## Current Version: 2.2.0
+## Current Version: 2.3.0
 **Last Updated:** 06.04.2026
 **GitHub Pages Status:** Deployed
 
 ## Version Log
+
+### Version 2.3.0 (06.04.2026)
+- **Type:** MINOR – New features added
+- **Summary:** Implemented "Latest Highlights" section and social media automation
+- **Changes:**
+  - Added "Public Highlights & Social Media Automation" rules to CLAUDE.md
+  - Created new "Aktuelle Highlights" / "Latest Highlights" sections in index.html and index-en.html
+  - Added first highlight entry for The Living Portfolio project
+  - Generated socialmedia-update-post.txt for social media sharing
+- **Files Modified:** CLAUDE.md, index.html, index-en.html, socialmedia-update-post.txt, VERSION.md
+- **Commits:** [To be added after commit]
 
 ### Version 2.2.0 (06.04.2026)
 - **Type:** MINOR – New content added

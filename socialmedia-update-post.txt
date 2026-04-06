@@ -1,0 +1,5 @@
+Portfolio updated with new project: 'The Living Portfolio – Agentic Workflow Showcase'. Showcases agentic content optimization workflows and AI governance for maintaining portfolio consistency across multiple formats. Fully browser-based development via GitHub Codespaces.
+
+DE: https://alexmvie.github.io/personal-skills-and-experiences/index.html
+
+EN: https://alexmvie.github.io/personal-skills-and-experiences/index-en.html
