@@ -1,8 +1,7 @@
 # Software Developer – Skills & Kompetenzen
 
-**Version:** 2.0  
-**Datum:** 30.03.2026  
-**Letzte Aktualisierung:** KI-gestützte Softwareentwicklung, C#/.NET Desktop Development
+**Version:** 2.1.0 (06.04.2026)  
+**Letzte Aktualisierung:** KI-gestützte Softwareentwicklung, Multi-Model Strategy, handsoff.md System
 
 ## Übersicht
 

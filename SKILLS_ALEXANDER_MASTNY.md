@@ -3,7 +3,7 @@
 **Full-Stack Developer** | Wien, Österreich | 20+ Jahre Erfahrung  
 **Fokus:** Cross-Platform Mobile, Web Development, Desktop Applications, KI-gestützte Entwicklung
 
----
+**Version:** 2.1.0 (06.04.2026)
 
 ## Über mich
 
