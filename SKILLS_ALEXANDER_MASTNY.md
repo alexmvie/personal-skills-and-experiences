@@ -171,7 +171,7 @@ Erfahrung mit Multi-LLM-Orchestrierung und strategischem Model Routing. Kern-Ans
 ### Development Tools & Kontinuierliche Context Persistence
 
 - **Antigravity** – Multi-LLM Plattform für UI/Design, nano banana für Grafiken. Multi-Model Rotation bis PRO-Contingent erschöpft, dann Fallback auf kostenlose Alternativen
-- **Windsurf** – AI-native IDE mit mehreren LLM-Optionen: Claude Sonnet 4.6 für komplexen Code, GPT-5-Codec für Preis/Leistungs-Effizienz, swe-1.5 für einfache Aufgaben
+- **Windsurf** – AI-native IDE mit mehreren LLM-Optionen: Claude Sonnet 4.6 für komplexen Code, GPT-5-Codex für Preis/Leistungs-Effizienz, swe-1.5 für einfache Aufgaben
 - **Cline** – VS Code Extension mit verschiedenen LLMs (mimo-v2-pro als kostenlose Alternative)
 
 ### handsoff.md System – Nahtlose Übergänge zwischen Umgebungen
