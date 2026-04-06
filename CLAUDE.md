@@ -280,6 +280,7 @@ Stop and ask for clarification if:
     https://alexmvie.github.io/personal-skills-and-experiences/index-en.html
     ```
   - **Mandatory Content:** Always include the respective language links as shown above.
+- **Anchor Links:** When generating highlights or social media posts that reference specific sections, include anchor links using the section IDs (e.g., #projects, #ai-development) to allow direct navigation to updated content.
 
 ---
 

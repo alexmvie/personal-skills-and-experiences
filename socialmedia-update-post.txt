@@ -1,7 +1,7 @@
-🇩🇪 Portfolio erweitert um neues Projekt "The Living Portfolio – Agentic Workflow Showcase", neue "Aktuelle Highlights"-Sektion und Social Media Automation. KI-Governance für konsistente Updates implementiert.
+🇩🇪 Portfolio erhält bedeutende Erweiterungen: Neues Projekt "The Living Portfolio – Agentic Workflow Showcase" demonstriert KI-gestützte Content-Optimierung und Browser-basierte Entwicklung. Neue "Aktuelle Highlights"-Sektion für wichtige Updates implementiert. Social Media Automation für automatische mehrsprachige Posts hinzugefügt. Versionierungssystem und Quality Gates eingeführt für konsistente Dokumentation. Footer aktualisiert zu "Zuletzt aktualisiert". KI-gestützte Entwicklung um Multi-LLM-Strategien und Context Engineering erweitert.
 https://alexmvie.github.io/personal-skills-and-experiences/index.html
 
 --
 
-🇺🇸 Portfolio expanded with new project "The Living Portfolio – Agentic Workflow Showcase", new "Latest Highlights" section, and social media automation. AI governance implemented for consistent updates.
+🇺🇸 Portfolio receives significant enhancements: New project "The Living Portfolio – Agentic Workflow Showcase" demonstrates AI-powered content optimization and browser-based development. New "Latest Highlights" section implemented for important updates. Social media automation added for automatic multilingual posts. Versioning system and quality gates introduced for consistent documentation. Footer updated to "Last updated". AI-powered development expanded with multi-LLM strategies and context engineering.
 https://alexmvie.github.io/personal-skills-and-experiences/index-en.html
