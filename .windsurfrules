@@ -98,7 +98,23 @@ Before making ANY file modifications:
 - Update footer dates in both HTML files (DD.MM.YYYY format)
 - Update "Letzte Aktualisierung" in SKILLS_ALEXANDER_MASTNY.md if present
 
-### Step 6: Validation
+### Step 6: Version Increment & Documentation
+
+- Determine version change type:
+  - **MAJOR (x.0.0)** – Structural changes, new sections, major restructuring
+  - **MINOR (0.x.0)** – New skills/content, expanded documentation
+  - **PATCH (0.0.x)** – Fixes, corrections, refinements, accuracy updates
+- Update VERSION.md:
+  - Update "Current Version" at top
+  - Update "Last Updated" date
+  - Add entry to "Version Log" with:
+    - Version number and date
+    - Summary of changes
+    - Commits involved
+    - Files modified
+- Add to Quality Checks list (below)
+
+### Step 7: Validation
 - Compare ZUSAMMENFASSUNG content with HTML to ensure alignment
 - Check that all technology names match across files
 - Verify version numbers are consistent
@@ -200,16 +216,20 @@ Before running final git push:
 - [ ] SKILLS_ZUSAMMENFASSUNG.md updated with condensed version
 - [ ] Content ratio check: Summary is 30-50% of detailed length
 - [ ] All technology names and versions match across files
+- [ ] Technology name accuracy verified (100% correct spelling)
 - [ ] Both HTML files (index.html & index-en.html) updated
 - [ ] No HTML structure changes (only content updates)
 - [ ] German language consistent in ALEXANDER_MASTNY.md
 - [ ] German language consistent in ZUSAMMENFASSUNG.md
 - [ ] English language used correctly in index-en.html
+- [ ] Cross-file consistency check passed (all tech names identical)
 - [ ] No orphaned references or broken links
 - [ ] Footer dates updated in BOTH HTML files (DD.MM.YYYY format)
 - [ ] "Letzte Aktualisierung" updated in ALEXANDER_MASTNY.md (if present)
-- [ ] Git status clean before commit
+- [ ] VERSION.md updated with new version entry and timestamp
+- [ ] Git status clean before commit (no uncommitted changes)
 - [ ] Commit message descriptive and follows format
+- [ ] Pre-push validation checks completed
 - [ ] Push completed successfully
 - [ ] Final git status: "up to date with origin/main"
 
@@ -278,7 +298,70 @@ Update workflow is successful when:
 
 ---
 
-## Notes
+## Accuracy & Quality Gates (MANDATORY)
+
+### Pre-Commit Validation (CRITICAL)
+
+Before ANY commit, run these validations:
+
+1. **Technology Name Consistency Check**
+   ```bash
+   # Search for potential spelling variations of known technologies
+   grep -i "codec" . --include="*.md" --include="*.html" 2>/dev/null || echo "✓ No codec variations found"
+   grep -i "codex" . --include="*.md" --include="*.html" 2>/dev/null || echo "Check Codex properly spelled"
+   ```
+   - GPT-5-Codex (CORRECT) – NOT "Codec"
+   - All other tech names must match official documentation
+
+2. **Cross-File Consistency Check**
+   - Same technology name spelling in:
+     - SKILLS_ALEXANDER_MASTNY.md
+     - SKILLS_ZUSAMMENFASSUNG.md
+     - index.html (DE)
+     - index-en.html (EN)
+   - Command: `grep -r "GPT-5-Codex" . --include="*.md" --include="*.html"`
+   - Result: All occurrences should match exactly
+
+3. **Version Number Verification**
+   - List all version numbers mentioned
+   - Verify they are current/accurate (no guessing)
+   - Must be consistent across files
+
+4. **No Invented Content**
+   - Every product/tool mentioned must be real
+   - Every feature described must be verified
+   - No "similar tools" substituted for actual tools
+   - If unsure → STOP and ask
+
+### Technology Name Reference
+
+Keep this list current (verified names ONLY):
+
+- **Windsurf** – AI-native IDE (official name)
+- **GPT-5-Codex** – OpenAI model (NOT "Codec")
+- **Antigravity** – AI development environment
+- **Claude** – Anthropic AI model
+- **Cline** – VS Code extension
+- **Payload CMS** – Headless CMS
+- **React Native** – Cross-platform framework
+- **Expo** – React Native tooling
+
+### Pre-Push Validation Script
+
+```bash
+# Run before git push:
+echo "=== Technology Name Check ==="
+grep -r "Codec" . --include="*.md" --include="*.html" && echo "❌ FOUND 'Codec' - should be 'Codex'" || echo "✓ No 'Codec' variations"
+
+echo "=== Consistency Check: All Codex occurrences ==="
+grep -c "GPT-5-Codex" SKILLS_ALEXANDER_MASTNY.md
+grep -c "GPT-5-Codex" SKILLS_ZUSAMMENFASSUNG.md
+grep -c "GPT-5-Codex" index.html
+grep -c "GPT-5-Codex" index-en.html
+
+echo "=== Grammar/Spelling Spot Check ==="
+echo "Review 2-3 random sentences for accuracy"
+```
 
 - This workflow ensures Alexander's portfolio stays cohesive across all documentation formats
 - Focus on QUALITY over SPEED—better to clarify than assume

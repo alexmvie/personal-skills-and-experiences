@@ -61,7 +61,19 @@ git log --oneline -1
 - Ensure responsive design is maintained
 - **Update Footer Date:** Change "Zuletzt aktualisiert" in index.html and "Last updated" in index-en.html to current date (DD.MM.YYYY format)
 
-#### Step 5: Update Date Stamps
+#### Step 5: Update Version & Documentation
+
+- Update VERSION.md with:
+  - New version number (MAJOR.MINOR.PATCH)
+  - Today's date as "Last Updated"
+  - GitHub Pages deployment status
+  - Entry in "Version Log" section with changes, commits, files modified
+- Version increment rules:
+  - **MAJOR (x.0.0)** – Structural changes, new main sections, major restructuring
+  - **MINOR (0.x.0)** – New skills/content added, significant expansions
+  - **PATCH (0.0.x)** – Bug fixes, accuracy corrections, refinements
+
+#### Step 6: Update Date Stamps
 - Update "Letzte Aktualisierung" field in SKILLS_ALEXANDER_MASTNY.md (at top/bottom as applicable)
 - Update footer dates in both HTML files:
   - index.html: "Zuletzt aktualisiert: [TODAY]" (DD.MM.YYYY)
@@ -162,6 +174,7 @@ Details:
 | index.html | German portfolio page | DE | Medium | Footer: "Zuletzt aktualisiert" |
 | index-en.html | English portfolio page | EN | Medium | Footer: "Last updated" |
 | index.md | Markdown source | DE | Medium | — |
+| VERSION.md | Version history & deployment tracking | EN | Reference | "Last Updated" + Version log |
 
 ---
 
@@ -176,7 +189,72 @@ Details:
 
 ---
 
-## When to Stop & Ask
+## Quality Control & Accuracy Rules
+
+### CRITICAL: NO HALLUCINATIONS
+
+This is a **professional portfolio**. Every claim, technology name, version number, and detail must be **100% accurate and verifiable**. This is NOT a creative writing exercise.
+
+### Accuracy Standards
+
+**BEFORE making ANY changes:**
+1. **Verify technology names exactly** – Use correct spelling:
+   - NOT "GPT-5-Codec" → USE "GPT-5-Codex"
+   - NOT invented variations of known names
+   - If unsure about a name, ask for clarification BEFORE writing
+2. **Check versions** – Version numbers must be current and accurate
+3. **Avoid assumptions** – If information is unclear, ask for confirmation
+4. **No "similar" technologies** – Use exact names, not approximations
+
+### Content Validation Checklist
+
+Before any file modification:
+
+- [ ] All technology/product names are spelled 100% correctly
+- [ ] All version numbers are current (not guessed)
+- [ ] No invented features or tools mentioned
+- [ ] All URLs/links are verified if included
+- [ ] All project descriptions match actual implementations
+- [ ] No generic descriptions without context
+- [ ] No assumptions about user preferences
+
+### When in Doubt
+
+If ANY of these are unclear:
+- Technology/product name spelling
+- Exact version number
+- Whether something was actually used vs. planned
+- How a feature actually works
+
+**→ STOP and ASK. Never guess or invent.**
+
+### Cross-File Consistency Rules
+
+When content appears in multiple files:
+1. All occurrences must use identical spelling (especially technology names)
+2. Version numbers must match across all files
+3. No contradictions between ALEXANDER_MASTNY.md and ZUSAMMENFASSUNG.md
+4. HTML pages must accurately reflect Markdown content
+
+### Verification Workflow
+
+```
+Content Idea
+    ↓
+Exact Name/Version Verification → REQUIRED
+    ↓
+Write to ALEXANDER_MASTNY.md (detailed)
+    ↓
+Create ZUSAMMENFASSUNG.md (condensed)
+    ↓
+Update HTML pages
+    ↓
+Search files for spelling variations → MUST be identical
+    ↓
+Verification complete → Ready for commit
+```
+
+**NO content moves forward without verification.**
 
 Stop and ask for clarification if:
 - Unclear whether new skill fits into existing categories
@@ -194,6 +272,9 @@ Update is considered successful when:
 - ✅ SKILLS_ZUSAMMENFASSUNG.md has concise summary (essential info retained)
 - ✅ Both HTML pages updated with matching content
 - ✅ All files have consistent technology names/versions
+- ✅ All technology names verified for 100% accuracy
+- ✅ VERSION.md updated with new version entry
 - ✅ Git commit created with descriptive message
 - ✅ Changes pushed to origin/main
+- ✅ GitHub Pages deployed (automatic after push)
 - ✅ No uncommitted changes remain
