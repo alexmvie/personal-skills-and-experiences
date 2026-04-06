@@ -1,0 +1,286 @@
+# .windsurfrules – AI Development Rules & Guidelines
+
+## Primary Goal
+Update and maintain Alexander Mastny's professional portfolio skills documentation while keeping all versions (detailed, summary, HTML) in sync.
+
+---
+
+## Pre-Action Checks (MANDATORY)
+
+Before making ANY file modifications:
+
+1. **Git Status Check**
+   ```bash
+   git fetch origin
+   git status
+   git log --oneline -1
+   ```
+   - MUST show: "On branch main"
+   - MUST show: "Your branch is up to date with 'origin/main'"
+   - MUST show: "nothing to commit, working tree clean"
+   - If ANY of these fail → STOP and report status
+
+2. **File Existence Check**
+   - Verify all required files exist:
+     - SKILLS_ALEXANDER_MASTNY.md
+     - SKILLS_ZUSAMMENFASSUNG.md
+     - index.html
+     - index-en.html
+
+---
+
+## Workflow Rules
+
+### Step 1: Review Phase
+- Always READ SKILLS_ALEXANDER_MASTNY.md first
+- Identify exactly where new content should go
+- Check existing structure and formatting
+- Do NOT make assumptions about placement
+
+### Step 2: Update DETAILED (ALEXANDER_MASTNY.md)
+- **Language:** German only
+- **Detail Level:** Maximum comprehensive detail
+- **Include:**
+  - Technologies with versions
+  - Implementation details
+  - Project context and approach
+  - Results/learning outcomes
+  - Code examples where relevant
+  - Specific frameworks/libraries
+- **Format:**
+  - Use markdown structure consistently
+  - Use `###` for main topics, `####` for subtopics
+  - Use bullet points for lists
+  - Use code blocks for technical details
+- **Quality Gate:**
+  - Content must be substantial (50+ words for any new section)
+  - Must include at least one concrete example or project reference
+  - No generic descriptions without context
+
+### Step 3: Update SUMMARY (ZUSAMMENFASSUNG.md)
+- **Language:** German only
+- **Detail Level:** Condensed but essential info retained
+- **Target Ratio:** 30-50% of detailed version length
+- **Must Keep:**
+  - Core technology names and versions
+  - Key frameworks and tools
+  - Major project examples
+  - Critical implementation approaches
+- **Can Remove:**
+  - Verbose descriptions
+  - Multiple similar examples (keep 1-2 best)
+  - Implementation "nice-to-knows"
+  - Detailed explanations
+- **Organization:**
+  - Follow existing category structure
+  - Maintain alphabetical ordering where applicable
+  - Use same bullet point format
+
+### Step 4: Update HTML Pages
+- **index.html:** German version
+- **index-en.html:** English version
+- **Synchronization Rule:** Content must represent same information in respective language
+- **HTML Structure:**
+  - Keep existing HTML structure/classes consistent
+  - Do NOT change CSS selectors
+  - Maintain responsive design classes
+- **Translation Quality:** Use professional technical terminology
+- **Update Related:**
+  - Summary sections
+  - Meta descriptions
+  - Section headers
+  - Related skill connections
+- **Update Footer Dates:**
+  - index.html footer: Change to `<p>Zuletzt aktualisiert: [TODAY]</p>` (DD.MM.YYYY format)
+  - index-en.html footer: Change to `<p>Last updated: [TODAY]</p>` (DD.MM.YYYY format)
+
+### Step 5: Update Date Stamps
+- Update footer dates in both HTML files (DD.MM.YYYY format)
+- Update "Letzte Aktualisierung" in SKILLS_ALEXANDER_MASTNY.md if present
+
+### Step 6: Validation
+- Compare ZUSAMMENFASSUNG content with HTML to ensure alignment
+- Check that all technology names match across files
+- Verify version numbers are consistent
+- Ensure German/English translations are accurate
+- Verify all date stamps are current
+
+---
+
+## Content Standards
+
+### Technology Naming Convention
+- Include version number: "React (19.x)" not just "React"
+- Use consistent formatting across all files
+- Match exact version numbers between ALEXANDER_MASTNY and ZUSAMMENFASSUNG
+
+### Description Style
+- **Detailed version:** Explain the "how" and "why"
+- **Summary version:** Focus on "what" and impact
+- **HTML version:** Balance between detail and scannability
+
+### Examples Format
+In ALEXANDER_MASTNY.md, use this structure for projects:
+```markdown
+### [Project Name] – [Type]
+
+**Tech:** [Tech stack with versions]
+[Brief project description]. Implementation: [Key technical approach].
+Additional context about features/results.
+```
+
+---
+
+## Git Workflow (MANDATORY)
+
+### After All File Updates Complete
+
+1. **Stage Changes**
+   ```bash
+   git add SKILLS_ALEXANDER_MASTNY.md SKILLS_ZUSAMMENFASSUNG.md index.html index-en.html
+   ```
+
+2. **Commit with Descriptive Message**
+   ```bash
+   git commit -m "Add/Update skill: [SKILL_NAME]
+
+**Detailed:** [What was added to ALEXANDER_MASTNY]
+**Summary:** [Changes to ZUSAMMENFASSUNG]
+**Pages:** Updated index.html and index-en.html
+
+Key additions:
+- [Tech/Framework 1]
+- [Tech/Framework 2]"
+   ```
+
+3. **Push to Origin**
+   ```bash
+   git push origin main
+   ```
+
+4. **Verify Push**
+   ```bash
+   git status
+   # Should show: "On branch main" + "Your branch is up to date with 'origin/main'"
+   ```
+
+---
+
+## Constraints & Prohibitions
+
+### PROHIBITED
+- ❌ Making changes without git status check
+- ❌ Committing without push
+- ❌ Leaving uncommitted changes
+- ❌ Changing files on wrong branch
+- ❌ Mixing English and German in same file
+- ❌ Removing existing content without explicit request
+- ❌ Using outdated version numbers
+- ❌ Duplicating content between files without purpose
+- ❌ Changing HTML structure/CSS classes
+- ❌ Skip git push—it must complete every workflow
+
+### ALWAYS
+- ✅ Check git status first
+- ✅ Read existing content before adding
+- ✅ Keep consistent formatting
+- ✅ Update version numbers
+- ✅ Verify all files updated together
+- ✅ Push to git after every completed workflow
+- ✅ Maintain language consistency per file
+- ✅ Validate cross-file consistency
+
+---
+
+## Quality Checks Checklist
+
+Before running final git push:
+
+- [ ] SKILLS_ALEXANDER_MASTNY.md updated with detailed content
+- [ ] SKILLS_ZUSAMMENFASSUNG.md updated with condensed version
+- [ ] Content ratio check: Summary is 30-50% of detailed length
+- [ ] All technology names and versions match across files
+- [ ] Both HTML files (index.html & index-en.html) updated
+- [ ] No HTML structure changes (only content updates)
+- [ ] German language consistent in ALEXANDER_MASTNY.md
+- [ ] German language consistent in ZUSAMMENFASSUNG.md
+- [ ] English language used correctly in index-en.html
+- [ ] No orphaned references or broken links
+- [ ] Footer dates updated in BOTH HTML files (DD.MM.YYYY format)
+- [ ] "Letzte Aktualisierung" updated in ALEXANDER_MASTNY.md (if present)
+- [ ] Git status clean before commit
+- [ ] Commit message descriptive and follows format
+- [ ] Push completed successfully
+- [ ] Final git status: "up to date with origin/main"
+
+---
+
+## Error Handling
+
+### If Git Status Check Fails
+Stop immediately and report:
+- Current branch
+- Uncommitted changes (if any)
+- Distance from origin/main
+- Recommendation: User should resolve manually
+
+### If File Content Conflicts
+- Report which files have inconsistent information
+- Suggest alignment approach
+- Do not auto-resolve without clarification
+
+### If Update Seems Incomplete
+- List what's missing
+- Ask for clarification on content
+- Do not force completion
+
+---
+
+## Communication
+
+### Report After Each Update
+Include:
+- Files modified
+- Lines added/changed
+- Git commit hash
+- Status: "Successfully pushed to origin/main" or error details
+
+### When Asking for Clarification
+Be specific:
+- What information is unclear
+- What options exist
+- Which file/section is affected
+- What decision is needed
+
+---
+
+## Reference: File Roles
+
+| File | Purpose | Content Type | Update Frequency |
+|------|---------|--------------|------------------|
+| SKILLS_ALEXANDER_MASTNY.md | Master detailed documentation | Comprehensive | As needed |
+| SKILLS_ZUSAMMENFASSUNG.md | Executive summary version | Condensed | After ALEXANDER_MASTNY |
+| index.html | German portfolio page | HTML + content | After ZUSAMMENFASSUNG |
+| index-en.html | English portfolio page | HTML + content (EN) | After ZUSAMMENFASSUNG |
+
+---
+
+## Success Definition
+
+Update workflow is successful when:
+1. ✅ Git check passed initially
+2. ✅ ALEXANDER_MASTNY.md has substantive new content
+3. ✅ ZUSAMMENFASSUNG.md reflects content (condensed)
+4. ✅ Both HTML pages updated with aligned content
+5. ✅ All files committed and pushed to main
+6. ✅ Final git status shows "up to date"
+7. ✅ No uncommitted changes remain
+
+---
+
+## Notes
+
+- This workflow ensures Alexander's portfolio stays cohesive across all documentation formats
+- Focus on QUALITY over SPEED—better to clarify than assume
+- Consistency across files is critical
+- Every change is tracked in git—there's always a history
