@@ -267,8 +267,9 @@ Stop and ask for clarification if:
 
 - **Public Highlights Check:** Before finalizing ANY update, the agent MUST explicitly ask the user: "Should a public highlight be created for this update in the 'Latest Highlights' section of the website?"
 - **Social Media Automation:** If a highlight is created, automatically generate a file named `socialmedia-update-post.txt`.
-  - **Tone:** Professional, factual, and concise.
-  - **Strict Constraint:** No decorative emojis allowed. Flag emojis permitted for language indication.
+  - **Social Media Tone:** Use an Explain It Like I'm 5 (ELI5) approach. Focus on the benefits and the big picture rather than technical implementation details.
+  - **Avoid Jargon:** Do not use terms like Agentic Workflow, IDs, Metadata, or Jekyll. Use everyday language such as AI assistants, easy linking, always up-to-date, or better navigation.
+  - **Emoji Rule:** Use ONLY flag emojis 🇩🇪 and 🇺🇸 for language distinction. No other emojis are allowed.
   - **Structure:** Bilingual post with German and English sections:
     ```
     🇩🇪 [German text describing the update]
