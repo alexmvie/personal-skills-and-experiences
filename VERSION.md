@@ -1,10 +1,19 @@
 # Version History
 
-## Current Version: 2.5.0
+## Current Version: 2.6.0
 **Last Updated:** 06.04.2026
 **GitHub Pages Status:** Deployed
 
 ## Version Log
+
+### Version 2.6.0 (06.04.2026)
+- **Type:** MINOR – Enhanced navigation
+- **Summary:** Added project card IDs for direct linking in highlights
+- **Changes:**
+  - Added id="living-portfolio" to project cards in both HTML files
+  - Updated highlights to include anchor links to the new project
+- **Files Modified:** index.html, index-en.html, VERSION.md
+- **Commits:** [To be added after commit]
 
 ### Version 2.5.0 (06.04.2026)
 - **Type:** MINOR – Enhanced navigation and comprehensive updates
