@@ -3,7 +3,7 @@
 **Full-Stack Developer** | Wien, Österreich | 20+ Jahre Erfahrung  
 **Fokus:** Cross-Platform Mobile, Web Development, Desktop Applications, KI-gestützte Entwicklung
 
-**Version:** 2.1.0 (06.04.2026)
+**Version:** 2.2.0 (06.04.2026)
 
 ## Über mich
 
@@ -101,6 +101,13 @@ Individuelles Backend für Hausverwaltungsdaten mit sicherem Upload/Download-Sys
 **Website:** https://wein-label.alex-mastny.com  
 **Tech:** WordPress, Bricks Builder, ACSS/Frames, Advanced Themer, Custom PHP Plugin  
 Custom Theme mit ACPT-Plugin für eLabels und Barcode-Generierung. Komplexe WordPress-Entwicklung mit Custom Post Types und Meta-Fields. Integration von Barcode-Generierung für Produkt-Labels.
+
+### The Living Portfolio – Agentic Workflow Showcase
+
+**Live:** https://alexmvie.github.io/personal-skills-and-experiences  
+**Repo:** https://github.com/alexmvie/personal-skills-and-experiences  
+**Tech:** GitHub Pages, GitHub Codespaces, GitHub Copilot (Agentic Mode), Jekyll  
+Dieses Projekt dient als Dokumentation meiner Skills und Experimentierfeld für Agentic Coding/Content Optimization. Das gesamte Projekt wird ausschließlich im Browser via GitHub Codespaces gepflegt, ohne lokale Entwicklungsumgebung. Implementierung: Nutzung von KI-Governance (CLAUDE.md / .windsurfrules), um Konsistenz und Korrektheit über mehrere Dateiformate und Sprachen hinweg zu erzwingen. Workflow: Ich liefere unstrukturierte Gedanken/Stichpunkte (Agentic Content Optimization), und der KI-Agent transformiert diese in strukturierte Portfolio-Inhalte. Jekyll-basierte Static Site Generation mit GitHub Pages Deployment, Multi-Format-Synchronisation (Markdown, HTML, DE/EN) und automatisierte Content-Transformation.
 
 ---
 

@@ -1,6 +1,6 @@
 # Software Developer – Skills & Kompetenzen
 
-**Version:** 2.1.0 (06.04.2026)  
+**Version:** 2.2.0 (06.04.2026)  
 **Letzte Aktualisierung:** KI-gestützte Softwareentwicklung, Multi-Model Strategy, handsoff.md System
 
 ## Übersicht
@@ -935,6 +935,15 @@ Umfangreiche IT-Infrastruktur-Ausbildung. Aufbau eines tiefen technischen Verst�
 - **Encryption & Security** – AES, Rfc2898DeriveBytes, SHA256
 - **File System Monitoring** – FileSystemWatcher, Echtzeit-Events
 - **System Tray Applications** – NotifyIcon, ContextMenuStrip
+
+### The Living Portfolio (Agentic Workflow Showcase)
+
+- **Live** – https://alexmvie.github.io/personal-skills-and-experiences
+- **Repo** – https://github.com/alexmvie/personal-skills-and-experiences
+- **Tech** – GitHub Pages, GitHub Codespaces, GitHub Copilot (Agentic Mode), Jekyll
+- **KI-Governance** – CLAUDE.md / .windsurfrules für Konsistenz über Formate/Sprachen
+- **Agentic Content Optimization** – Unstrukturierte Gedanken zu strukturierten Portfolio-Inhalten
+- **Browser-only Development** – Ausschließlich im Browser via Codespaces gepflegt
 
 ---
 
