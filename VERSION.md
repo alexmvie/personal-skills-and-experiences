@@ -15,7 +15,7 @@
   - Regenerated socialmedia-update-post.txt with comprehensive update details
   - Updated CLAUDE.md with anchor link generation rules
 - **Files Modified:** index.html, index-en.html, CLAUDE.md, socialmedia-update-post.txt, VERSION.md
-- **Commits:** [To be added after commit]
+- **Commits:** fd15f26
 
 ### Version 2.4.0 (06.04.2026)
 - **Type:** MINOR – Enhanced features
