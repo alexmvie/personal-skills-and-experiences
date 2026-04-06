@@ -1,6 +1,6 @@
 # Software Developer – Skills & Kompetenzen
 
-**Version:** 2.6.0 (06.04.2026)  
+**Version:** 2.7.0 (06.04.2026)  
 **Letzte Aktualisierung:** KI-gestützte Softwareentwicklung, Multi-Model Strategy, handsoff.md System
 
 ## Übersicht

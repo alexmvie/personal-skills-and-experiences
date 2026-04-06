@@ -1,21 +1,22 @@
 # Version History
 
-## Current Version: 2.6.0
+## Current Version: 2.7.0
 **Last Updated:** 06.04.2026
 **GitHub Pages Status:** Deployed
 
 ## Version Log
 
-### Version 2.6.0 (06.04.2026)
-- **Type:** MINOR – Enhanced navigation
-- **Summary:** Added project card IDs for direct linking in highlights
+### Version 2.7.0 (06.04.2026)
+- **Type:** MINOR – Anchor navigation enhancement
+- **Summary:** Added IDs to all cards and sections for direct linking
 - **Changes:**
-  - Added id="living-portfolio" to project cards in both HTML files
-  - Updated highlights to include anchor links to the new project
+  - Assigned unique IDs to all cards and sections in both HTML pages
+  - Updated highlights to reference the new direct links
+  - Enabled full anchor-based navigation across the portfolio
 - **Files Modified:** index.html, index-en.html, VERSION.md
-- **Commits:** bbcf4ed
+- **Commits:** [To be added after commit]
 
-### Version 2.5.0 (06.04.2026)
+### Version 2.6.0 (06.04.2026)
 - **Type:** MINOR – Enhanced navigation and comprehensive updates
 - **Summary:** Added section anchors for direct navigation and comprehensive highlight summaries
 - **Changes:**
