@@ -15,7 +15,7 @@
   - Added first highlight entry for The Living Portfolio project
   - Generated socialmedia-update-post.txt for social media sharing
 - **Files Modified:** CLAUDE.md, index.html, index-en.html, socialmedia-update-post.txt, VERSION.md
-- **Commits:** [To be added after commit]
+- **Commits:** e45512e
 
 ### Version 2.2.0 (06.04.2026)
 - **Type:** MINOR – New content added
