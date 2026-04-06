@@ -508,34 +508,35 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### KI-gestützte Entwicklung
 
-- **Augment Code** – KI-gestützte Code-Generierung
-- **Windsurf** – KI-Entwicklungstool
-- **Antigravity** – KI-Entwicklungsumgebung
-- **Context Engineering** – KI-Prompt-Optimierung
+- **Windsurf** – AI-native IDE (Claude Sonnet 4.6, GPT-5-Codec, swe-1.5)
+- **Antigravity** – Multi-LLM Plattform (UI/Design, Pro-Contingent Rotation)
+- **Cline** – VS Code Extension (verschiedene LLM-Optionen)
+- **handsoff.md System** – Context-Persistenz zwischen Entwicklungsumgebungen
+- **Context Engineering** – KI-Prompt-Optimierung mit claude.md & windsurfrules
 
 ---
 
 ## KI-gestützte Softwareentwicklung
 
-### Multi-LLM Orchestrierung
+### Multi-LLM Strategy & Pro-Contingent Management
 
-- **Model Routing** – Strategische Auswahl des optimalen LLM für jede Aufgabe
-- **Task-Model Matching** – Zuweisung spezifischer Modelle zu Entwicklungsaufgaben
-- **Fallback-Strategie** – Wechsel zwischen Modellen bei Limit-Erreichung
+- **Model Routing** – Alle verfügbaren Models bis PRO-Contingent erschöpft, dann Fallback auf kostenlose Alternativen
+- **Preis/Leistungs-Optimierung** – Strategische Model-Auswahl nach Effizienz-Kriterien
+- **Contingent-Management** – Proaktive Fallback-Strategie wenn kostenpflichtige Limits erreicht
 
 ### AI Development Tools
 
-- **Antigravity** – Multi-LLM Plattform (UI/Design, nano banana für Grafiken)
-- **Windsurf** – AI-native IDE (Claude Sonnet 4.6 für komplexen Code, swe-1.5 für einfachen Code)
+- **Antigravity** – Multi-LLM Plattform (UI/Design, nano banana für Grafiken, PRO-Contingent Rotation)
+- **Windsurf** – AI-native IDE (Claude Sonnet 4.6 für komplexen Code, GPT-5-Codec für Effizienz, swe-1.5 für einfache Aufgaben)
 - **Cline** – VS Code Extension (mimo-v2-pro als kostenlose Alternative)
-- **Augment Code** – Ehemalige Nutzung (gekündigt wegen Kosten)
+- **handsoff.md System** – AI-Agents halten Context-Datei aktuell für nahtlose Übergänge zwischen Umgebungen
 
-### Projekt-Management mit AI
+### Context Engineering & Projekt-Management
 
-- **claude.md** – Projekt-Kontext-Datei für AI-Agents
-- **windsurfrules** – Konfigurationsdatei für AI-Verhalten
-- **Config Versionierung** – Interne Versionierung innerhalb der Konfigurationsdateien
+- **claude.md & windsurfrules** – Projekt-spezifische Konfigurationen für konsistente AI-Ergebnisse
+- **handsoff.md** – Session State, Projekt-Kontext, Context Checkpoints für Contingent-Übergänge
 - **Feature-basierte Milestones** – Fortschritts-Tracking nach Funktionalität
+- **Config Versionierung** – Interne Versionierung für Konsistenz über Sessions
 
 ### Quality Assurance
 

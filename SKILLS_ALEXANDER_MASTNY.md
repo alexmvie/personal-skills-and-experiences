@@ -164,14 +164,40 @@ Umfangreiche IT-Infrastruktur-Ausbildung. Aufbau eines tiefen technischen Verst�
 
 ## KI-gestützte Entwicklung
 
-Erfahrung mit Multi-LLM-Orchestrierung und strategischem Model Routing:
+### Multi-Model Strategy & Pro-Contingent Management
 
-- **Antigravity** – Multi-LLM Plattform für UI/Design, nano banana für Grafiken
-- **Windsurf** – AI-native IDE mit Claude Sonnet 4.6 für komplexen Code, swe-1.5 für einfache Aufgaben
+Erfahrung mit Multi-LLM-Orchestrierung und strategischem Model Routing. Kern-Ansatz: Alle verfügbaren Models im Eco-System nutzen bis das kostenpflichtige PRO-Contingent erschöpft ist – was in der Praxis sehr rasch der Fall ist. Model-Rotation nach Verfügbarkeit und Effizienz-Kriterien (Preis/Leistung, Kontext-Fenster, Speed).
+
+### Development Tools & Kontinuierliche Context Persistence
+
+- **Antigravity** – Multi-LLM Plattform für UI/Design, nano banana für Grafiken. Multi-Model Rotation bis PRO-Contingent erschöpft, dann Fallback auf kostenlose Alternativen
+- **Windsurf** – AI-native IDE mit mehreren LLM-Optionen: Claude Sonnet 4.6 für komplexen Code, GPT-5-Codec für Preis/Leistungs-Effizienz, swe-1.5 für einfache Aufgaben
 - **Cline** – VS Code Extension mit verschiedenen LLMs (mimo-v2-pro als kostenlose Alternative)
-- **Context Engineering** – Projekt-spezifische Konfigurationen (claude.md, windsurfrules) für konsistente AI-Ergebnisse
-- **Quality Assurance** – Rails/Guardrails für projekt-spezifische Regeln, Playwright E2E Testing für AI-generierten Code
-- **Projekt-Management** – Feature-basierte Milestones, Config Versionierung innerhalb der Konfigurationsdateien
+
+### handsoff.md System – Nahtlose Übergänge zwischen Umgebungen
+
+Zentrales Konzept für kontinuierliche Projektarbeit über Contingent-Grenzen hinweg: AI-Agents halten eine `handsoff.md` Datei ständig aktuell mit:
+- **Projekt-Kontext** – Aktuelle Code-Structure, Active Tasks, Verzeichnis-Layout
+- **Session State** – Letzte durchgeführte Operationen, Error-States, Zu-Erledigende Items
+- **Context Checkpoints** – Wesentliche Findings, Performance-Erkenntnisse, Debugging-Notes
+- **Nahtlose Übergänge** – Ermöglicht sofortiges Weitermachen mit anderer IDE/Tool wenn PRO-Contingent erschöpft
+
+### Context Engineering
+
+- **Projekt-spezifische Konfigurationen** – claude.md, windsurfrules, .instructions.md für konsistente AI-Ergebnisse
+- **Config Versionierung** – Interne Versionierung innerhalb der Konfigurationsdateien
+- **System Prompts** – Vordefinierte Kontexte für konsistente Ergebnisse über Sessions hinweg
+
+### Quality Assurance
+
+- **Rails/Guardrails** – Projekt-spezifische Regeln für AI-Output Validierung
+- **Playwright E2E Testing** – Automatisierte Tests für AI-generierten Code
+- **Manuelle Verifikation** – Persönliche Prüfung nach automatisierten Tests
+
+### Projekt-Management
+
+- **Feature-basierte Milestones** – Fortschritts-Tracking nach Funktionalität
+- **Config Management** – Versionierung und Synchronisation über Repository
 
 ---
 
