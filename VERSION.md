@@ -13,7 +13,7 @@
   - Added id="living-portfolio" to project cards in both HTML files
   - Updated highlights to include anchor links to the new project
 - **Files Modified:** index.html, index-en.html, VERSION.md
-- **Commits:** [To be added after commit]
+- **Commits:** bbcf4ed
 
 ### Version 2.5.0 (06.04.2026)
 - **Type:** MINOR – Enhanced navigation and comprehensive updates
