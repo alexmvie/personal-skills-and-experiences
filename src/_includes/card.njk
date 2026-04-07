@@ -1,0 +1,7 @@
+<div class="card" id="{{ id }}">
+   <h3 class="card-title" id="{{ id }}-title">{{ title }}</h3>
+   <p class="card-description">{{ description }}</p>
+   {% if link %}<a href="{{ link }}">Mehr</a>{% endif %}
+   {% if subtitle %}<p class="card-subtitle">{{ subtitle }}</p>{% endif %}
+   {% if details %}<span class="details">{{ details }}</span>{% endif %}
+</div>
