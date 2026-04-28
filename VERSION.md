@@ -1,10 +1,19 @@
 # Version History
 
-## Current Version: 2.7.0
-**Last Updated:** 06.04.2026
+## Current Version: 2.7.1
+**Last Updated:** 28.04.2026
 **GitHub Pages Status:** Deployed
 
 ## Version Log
+
+### Version 2.7.1 (28.04.2026)
+- **Type:** MINOR – New content added
+- **Summary:** Added Kimi K2.6 to AI model experience documentation
+- **Changes:**
+  - Added Kimi K2.6 to Windsurf LLM options across all files
+  - Updated version numbers and dates across all portfolio files
+- **Files Modified:** SKILLS_ALEXANDER_MASTNY.md, SKILLS_ZUSAMMENFASSUNG.md, index.html, index-en.html, VERSION.md
+- **Commits:** (pending)
 
 ### Version 2.7.0 (06.04.2026)
 - **Type:** MINOR – Anchor navigation enhancement

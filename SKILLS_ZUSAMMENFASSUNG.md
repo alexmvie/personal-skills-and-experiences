@@ -1,7 +1,7 @@
 # Software Developer – Skills & Kompetenzen
 
-**Version:** 2.7.0 (06.04.2026)  
-**Letzte Aktualisierung:** KI-gestützte Softwareentwicklung, Multi-Model Strategy, handsoff.md System
+**Version:** 2.7.1 (28.04.2026)  
+**Letzte Aktualisierung:** Kimi K2.6 zu LLM-Erfahrung hinzugefügt
 
 ## Übersicht
 
@@ -507,7 +507,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 
 ### KI-gestützte Entwicklung
 
-- **Windsurf** – AI-native IDE (Claude Sonnet 4.6, GPT-5-Codex, swe-1.5)
+- **Windsurf** – AI-native IDE (Claude Sonnet 4.6, GPT-5-Codex, Kimi K2.6, swe-1.5)
 - **Antigravity** – Multi-LLM Plattform (UI/Design, Pro-Contingent Rotation)
 - **Cline** – VS Code Extension (verschiedene LLM-Optionen)
 - **handsoff.md System** – Context-Persistenz zwischen Entwicklungsumgebungen
@@ -526,7 +526,7 @@ Full-Stack Software Developer mit Fokus auf Cross-Platform Mobile Development, m
 ### AI Development Tools
 
 - **Antigravity** – Multi-LLM Plattform (UI/Design, nano banana für Grafiken, PRO-Contingent Rotation)
-- **Windsurf** – AI-native IDE (Claude Sonnet 4.6 für komplexen Code, GPT-5-Codex für Effizienz, swe-1.5 für einfache Aufgaben)
+- **Windsurf** – AI-native IDE (Claude Sonnet 4.6 für komplexen Code, GPT-5-Codex für Effizienz, Kimi K2.6 für lange Kontexte und Reasoning, swe-1.5 für einfache Aufgaben)
 - **Cline** – VS Code Extension (mimo-v2-pro als kostenlose Alternative)
 - **handsoff.md System** – AI-Agents halten Context-Datei aktuell für nahtlose Übergänge zwischen Umgebungen
 
